@@ -43,8 +43,8 @@ SEASTAR_THREAD_TEST_CASE(kafka_connection_write_without_errors_test) {
     temporary_buffer<char> message {message_str, message_len};
 
     auto conn = kafka::tcp_connection::connect(BROKER_ADDRESS, PORT, TIMEOUT).get0();
-    conn->write(message.clone()).get();
-    conn->close().get();
+    conn.write(message.clone()).get();
+    conn.close().get();
 }
 
 SEASTAR_THREAD_TEST_CASE(kafka_connection_read_without_errors_test) {
@@ -76,9 +76,9 @@ SEASTAR_THREAD_TEST_CASE(kafka_connection_successful_write_read_routine_test) {
     temporary_buffer<char> message {message_str, message_len};
 
     auto conn = kafka::tcp_connection::connect(BROKER_ADDRESS, PORT, TIMEOUT).get0();
-    conn->write(message.clone()).get();
-    auto buff = conn->read(correct_response.length()).get0();
+    conn.write(message.clone()).get();
+    auto buff = conn.read(correct_response.length()).get0();
     std::string response {buff.get(), buff.size()};
     BOOST_CHECK_EQUAL(response, correct_response);
-    conn->close().get();
+    conn.close().get();
 }

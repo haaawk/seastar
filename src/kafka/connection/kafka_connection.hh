@@ -37,7 +37,7 @@ namespace kafka {
 
 class kafka_connection final {
 
-    lw_shared_ptr<tcp_connection> _connection;
+    tcp_connection _connection;
     std::string _client_id;
     int32_t _correlation_id;
     api_versions_response _api_versions;
@@ -77,12 +77,12 @@ class kafka_connection final {
     }
 
     future<> send_request(temporary_buffer<char> message_buffer) {
-        return _connection->write(std::move(message_buffer));
+        return _connection.write(std::move(message_buffer));
     }
 
     template<typename RequestType>
     future<typename RequestType::response_type> receive_response(int32_t correlation_id, int16_t api_version) {
-        return _connection->read(4).then([] (temporary_buffer<char> response_size) {
+        return _connection.read(4).then([] (temporary_buffer<char> response_size) {
             boost::iostreams::stream<boost::iostreams::array_source> response_size_stream
                     (response_size.get(), response_size.size());
 
@@ -90,7 +90,7 @@ class kafka_connection final {
             size.deserialize(response_size_stream, 0);
             return *size;
         }).then([this] (int32_t response_size) {
-            return _connection->read(response_size);
+            return _connection.read(response_size);
         }).then([correlation_id, api_version] (temporary_buffer<char> response) {
             boost::iostreams::stream<boost::iostreams::array_source> response_stream
                     (response.get(), response.size());
@@ -114,7 +114,7 @@ public:
     static future<lw_shared_ptr<kafka_connection>> connect(const std::string& host, uint16_t port,
             const std::string& client_id, uint32_t timeout_ms);
 
-    kafka_connection(lw_shared_ptr<tcp_connection> connection, std::string client_id) :
+    kafka_connection(tcp_connection connection, std::string client_id) :
         _connection(std::move(connection)),
         _client_id(std::move(client_id)),
         _correlation_id(0),

@@ -29,8 +29,8 @@ namespace kafka {
 future<lw_shared_ptr<kafka_connection>> kafka_connection::connect(const std::string& host, uint16_t port,
         const std::string& client_id, uint32_t timeout_ms) {
     return tcp_connection::connect(host, port, timeout_ms)
-    .then([client_id] (lw_shared_ptr<tcp_connection> connection) {
-        return make_lw_shared<kafka_connection>(connection, client_id);
+    .then([client_id] (tcp_connection connection) {
+        return make_lw_shared<kafka_connection>(std::move(connection), client_id);
     }).then([] (lw_shared_ptr<kafka_connection> connection) {
         return connection->init().then([connection] {
             return connection;
@@ -47,7 +47,7 @@ future<> kafka_connection::init() {
 }
 
 future<> kafka_connection::close() {
-    return _connection->close();
+    return _connection.close();
 }
 
 }

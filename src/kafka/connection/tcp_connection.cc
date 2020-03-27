@@ -30,7 +30,7 @@ static auto timeout_end(uint32_t timeout_ms) {
     return std::chrono::steady_clock::now() + std::chrono::milliseconds(timeout_ms);
 }
 
-future<lw_shared_ptr<tcp_connection>> tcp_connection::connect(const std::string& host, uint16_t port,
+future<tcp_connection> tcp_connection::connect(const std::string& host, uint16_t port,
         uint32_t timeout_ms) {
     net::inet_address target_host = net::inet_address{host};
     sa_family_t family = target_host.is_ipv4() ? sa_family_t(AF_INET) : sa_family_t(AF_INET6);
@@ -40,7 +40,7 @@ future<lw_shared_ptr<tcp_connection>> tcp_connection::connect(const std::string&
             : engine().net().connect(ipv6_addr{target_host, port}, socket, transport::TCP);
     auto f_timeout = seastar::with_timeout(timeout_end(timeout_ms), std::move(f));
     return f_timeout.then([target_host = std::move(target_host), timeout_ms, port] (connected_socket fd) {
-                return make_lw_shared<tcp_connection>(target_host, port, timeout_ms, std::move(fd));
+                return tcp_connection(target_host, port, timeout_ms, std::move(fd));
             }
     );
 }

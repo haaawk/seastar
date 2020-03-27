@@ -45,7 +45,7 @@ class tcp_connection final {
     output_stream<char> _write_buf;
 
 public:
-    static future<lw_shared_ptr<tcp_connection>> connect(const std::string& host, uint16_t port, uint32_t timeout_ms);
+    static future<tcp_connection> connect(const std::string& host, uint16_t port, uint32_t timeout_ms);
 
     tcp_connection(const net::inet_address& host, uint16_t port, uint32_t timeout_ms, connected_socket&& fd) noexcept
             : _host(host)
