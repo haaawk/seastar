@@ -417,6 +417,12 @@ seastar_generate_protobuf (
   IN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/src/proto/metrics2.proto
   OUT_DIR ${Seastar_GEN_BINARY_DIR}/src/proto)
 
+seastar_generate_protobuf (
+  TARGET seastar_proto_deadlock_trace
+  VAR proto_deadlock_trace_files
+  IN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/src/proto/deadlock_trace.proto
+  OUT_DIR ${Seastar_GEN_BINARY_DIR}/src/proto)
+
 if (Seastar_DPDK)
   set (seastar_dpdk_obj seastar-dpdk.o)
 endif ()
@@ -424,6 +430,7 @@ endif ()
 add_library (seastar STATIC
   ${http_request_parser_file}
   ${proto_metrics2_files}
+  ${proto_deadlock_trace_files}
   ${seastar_dpdk_obj}
   include/seastar/core/abort_source.hh
   include/seastar/core/alien.hh
@@ -504,6 +511,7 @@ add_library (seastar STATIC
   include/seastar/core/stream.hh
   include/seastar/core/systemwide_memory_barrier.hh
   include/seastar/core/task.hh
+  include/seastar/core/internal/deadlock_utils.hh
   include/seastar/core/temporary_buffer.hh
   include/seastar/core/thread.hh
   include/seastar/core/thread_cputime_clock.hh
@@ -630,6 +638,7 @@ add_library (seastar STATIC
   src/core/uname.cc
   src/core/vla.hh
   src/core/io_queue.cc
+  src/core/deadlock_utils.cc
   src/http/api_docs.cc
   src/http/common.cc
   src/http/file_handler.cc
@@ -682,7 +691,8 @@ add_library (Seastar::seastar ALIAS seastar)
 add_dependencies (seastar
   seastar_http_request_parser
   seastar_http_response_parser
-  seastar_proto_metrics2)
+  seastar_proto_metrics2
+  seastar_proto_deadlock_trace)
 
 target_include_directories (seastar
   PUBLIC
