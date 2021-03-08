@@ -1,0 +1,9 @@
+{"sem": 0, "count": 1, "type": "sem_ctor", "timestamp": 11}
+{"sem": 1, "count": 1, "type": "sem_ctor", "timestamp": 12}
+{"sem": 0, "pre": 1, "post": 2, "count": 1, "type": "sem_wait", "timestamp": 13}
+{"pre": 1, "post": 2, "type": "edge", "timestamp": 14}
+{"sem": 1, "pre": 1, "post": 3, "count": 1, "type": "sem_wait", "timestamp": 15}
+{"pre": 1, "post": 3, "type": "edge", "timestamp": 16}
+{"sem": 0, "pre": 2, "post": 4, "count": 1, "type": "sem_wait", "timestamp": 17}
+{"pre": 2, "post": 4, "type": "edge", "timestamp": 18}
+{"sem": 0, "vertex": 3, "count": 1, "type": "sem_signal", "timestamp": 19}
