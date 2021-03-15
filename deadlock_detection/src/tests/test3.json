@@ -1,0 +1,3 @@
+{"sem": 0, "count": 0, "type": "sem_ctor", "timestamp": 12}
+{"sem": 0, "pre": 1, "post": 2, "count": 1, "type": "sem_wait", "timestamp": 13}
+{"pre": 1, "post": 2, "type": "edge", "timestamp": 14}
