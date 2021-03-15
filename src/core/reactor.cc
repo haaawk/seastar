@@ -128,6 +128,7 @@
 #include <seastar/core/metrics.hh>
 #include <seastar/core/execution_stage.hh>
 #include <seastar/core/exception_hacks.hh>
+#include <seastar/core/internal/deadlock_utils.hh>
 #include "stall_detector.hh"
 
 #include <yaml-cpp/yaml.h>
@@ -2195,7 +2196,10 @@ void reactor::run_tasks(task_queue& tq) {
         STAP_PROBE(seastar, reactor_run_tasks_single_start);
         task_histogram_add_task(*tsk);
         _current_task = tsk;
-        tsk->run_and_dispose();
+        {
+            deadlock_detection::current_traced_vertex_updater update_vertex(tsk);
+            tsk->run_and_dispose();
+        }
         _current_task = nullptr;
         STAP_PROBE(seastar, reactor_run_tasks_single_end);
         ++tq._tasks_processed;

@@ -504,6 +504,7 @@ add_library (seastar STATIC
   include/seastar/core/stream.hh
   include/seastar/core/systemwide_memory_barrier.hh
   include/seastar/core/task.hh
+  include/seastar/core/internal/deadlock_utils.hh
   include/seastar/core/temporary_buffer.hh
   include/seastar/core/thread.hh
   include/seastar/core/thread_cputime_clock.hh
@@ -630,6 +631,7 @@ add_library (seastar STATIC
   src/core/uname.cc
   src/core/vla.hh
   src/core/io_queue.cc
+  src/core/deadlock_utils.cc
   src/http/api_docs.cc
   src/http/common.cc
   src/http/file_handler.cc
@@ -933,6 +935,12 @@ if ((CMAKE_BUILD_TYPE STREQUAL "Debug") OR (CMAKE_BUILD_TYPE STREQUAL "Sanitize"
       SEASTAR_DEFAULT_ALLOCATOR
       SEASTAR_DEBUG_SHARED_PTR
       SEASTAR_SHUFFLE_TASK_QUEUE)
+endif ()
+
+if (SEASTAR_DEADLOCK_DETECTION)
+  target_compile_definitions (seastar
+          PUBLIC
+          SEASTAR_DEADLOCK_DETECTION)
 endif ()
 
 set (Seastar_STACK_GUARD_MODES "Debug" "Sanitize" "Dev")
