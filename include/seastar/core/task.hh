@@ -24,6 +24,8 @@
 #include <memory>
 #include <seastar/core/scheduling.hh>
 #include <seastar/util/backtrace.hh>
+#include <seastar/core/internal/deadlock_utils.hh>
+#include <iostream>
 
 namespace seastar {
 
@@ -37,9 +39,14 @@ protected:
     // so no need for a virtual destructor here. Derived classes that implement
     // run_and_dispose() should be declared final to avoid losing concrete type
     // information via inheritance.
-    ~task() = default;
+    ~task() {
+        deadlock_detection::trace_vertex_destructor(this);
+    }
+
 public:
-    explicit task(scheduling_group sg = current_scheduling_group()) noexcept : _sg(sg) {}
+    explicit task(scheduling_group sg = current_scheduling_group()) noexcept: _sg(sg) {
+        deadlock_detection::trace_vertex_constructor(this);
+    }
     virtual void run_and_dispose() noexcept = 0;
     /// Returns the next task which is waiting for this task to complete execution, or nullptr.
     virtual task* waiting_task() noexcept = 0;
@@ -63,5 +70,14 @@ shared_backtrace task::get_backtrace() const {
 
 void schedule(task* t) noexcept;
 void schedule_urgent(task* t) noexcept;
+
+#ifdef SEASTAR_DEADLOCK_DETECTION
+namespace deadlock_detection {
+using info_tuple = std::tuple<const void*, const std::type_info*, const std::type_info*>;
+    inline info_tuple get_info(const task* ptr) {
+        return {ptr, &typeid(task), &typeid(*ptr)};
+    }
+}
+#endif
 
 }

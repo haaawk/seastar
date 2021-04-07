@@ -166,14 +166,19 @@ private:
     }
 public:
     static typename ResolvedTupleTransform::future_type wait_all(Futures&&... futures) noexcept {
+        auto tmp_future = seastar::make_ready_future<>();
+        (deadlock_detection::trace_edge(&futures, &tmp_future), ...);
         if ((futures.available() && ...)) {
-            return ResolvedTupleTransform::make_ready_future(std::make_tuple(std::move(futures)...));
+            auto ret = ResolvedTupleTransform::make_ready_future(std::make_tuple(std::move(futures)...));
+            deadlock_detection::trace_edge(&tmp_future, &ret);
+            return ret;
         }
         auto state = [&] () noexcept {
             memory::disable_failure_guard dfg;
             return new when_all_state(std::move(futures)...);
         }();
         auto ret = state->p.get_future();
+        deadlock_detection::trace_edge(&tmp_future, &ret);
         state->do_wait_all();
         return ret;
     }

@@ -1,0 +1,21 @@
+{"sem": 0, "count": 1, "type": "sem_ctor", "timestamp": 12}
+{"sem": 1, "count": 1, "type": "sem_ctor", "timestamp": 13}
+{"sem": 2, "count": 1, "type": "sem_ctor", "timestamp": 14}
+{"sem": 0, "pre": 1, "post": 2, "count": 1, "type": "sem_wait", "timestamp": 13}
+{"pre": 1, "post": 2, "type": "edge", "timestamp": 14}
+{"sem": 1, "pre": 2, "post": 3, "count": 1, "type": "sem_wait", "timestamp": 15}
+{"pre": 2, "post": 3, "type": "edge", "timestamp": 16}
+{"sem": 2, "pre": 1, "post": 4, "count": 1, "type": "sem_wait", "timestamp": 17}
+{"pre": 1, "post": 4, "type": "edge", "timestamp": 18}
+{"sem": 1, "pre": 1, "post": 5, "count": 1, "type": "sem_wait", "timestamp": 19}
+{"pre": 1, "post": 5, "type": "edge", "timestamp": 20}
+{"sem": 2, "pre": 5, "post": 6, "count": 1, "type": "sem_wait", "timestamp": 21}
+{"pre": 5, "post": 6, "type": "edge", "timestamp": 22}
+{"sem": 0, "pre": 4, "post": 7, "count": 1, "type": "sem_wait", "timestamp": 23}
+{"pre": 4, "post": 7, "type": "edge", "timestamp": 24}
+{"sem": 0, "vertex": 3, "count": 1, "type": "sem_signal", "timestamp": 25}
+{"sem": 1, "vertex": 3, "count": 1, "type": "sem_signal", "timestamp": 26}
+{"sem": 1, "vertex": 6, "count": 1, "type": "sem_signal", "timestamp": 27}
+{"sem": 2, "vertex": 6, "count": 1, "type": "sem_signal", "timestamp": 28}
+{"sem": 2, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 29}
+{"sem": 0, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 30}

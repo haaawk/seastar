@@ -1,0 +1,1405 @@
+{"sem": 1, "count": 1, "type": "sem_ctor", "timestamp": 416797384568}
+{"sem": 2, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416855927072}
+{"sem": 3, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416855990483}
+{"sem": 4, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416856011052}
+{"sem": 5, "count": 0, "type": "sem_ctor", "timestamp": 416856059976}
+{"vertex": 6, "type": "vertex_ctor", "timestamp": 416856082167}
+{"pre": 7, "post": 6, "speculative": true, "type": "edge", "timestamp": 416856108949}
+{"sem": 8, "count": 0, "type": "sem_ctor", "timestamp": 416856132283}
+{"sem": 9, "count": 128, "type": "sem_ctor", "timestamp": 416856372412}
+{"sem": 10, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416857651273}
+{"sem": 11, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416857661692}
+{"sem": 12, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416857788104}
+{"sem": 13, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416857803693}
+{"sem": 14, "count": 0, "type": "sem_ctor", "timestamp": 416857822950}
+{"vertex": 15, "type": "vertex_ctor", "timestamp": 416857838951}
+{"pre": 7, "post": 15, "speculative": true, "type": "edge", "timestamp": 416857857516}
+{"sem": 16, "count": 0, "type": "sem_ctor", "timestamp": 416857877514}
+{"sem": 17, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416857878757}
+{"sem": 18, "count": 9223372036854775807, "type": "sem_ctor", "timestamp": 416857894257}
+{"sem": 19, "count": 0, "type": "sem_ctor", "timestamp": 416857918963}
+{"vertex": 20, "type": "vertex_ctor", "timestamp": 416857935395}
+{"pre": 7, "post": 20, "speculative": true, "type": "edge", "timestamp": 416857953851}
+{"sem": 21, "count": 0, "type": "sem_ctor", "timestamp": 416857973257}
+{"sem": 22, "count": 128, "type": "sem_ctor", "timestamp": 416858206322}
+{"sem": 23, "count": 128, "type": "sem_ctor", "timestamp": 416858380334}
+{"vertex": 24, "type": "vertex_ctor", "timestamp": 416860251415}
+{"vertex": 25, "type": "vertex_ctor", "timestamp": 416860267166}
+{"pre": 7, "post": 24, "speculative": true, "type": "edge", "timestamp": 416860289548}
+{"pre": 7, "post": 25, "speculative": true, "type": "edge", "timestamp": 416860303464}
+{"vertex": 26, "type": "vertex_ctor", "timestamp": 416860333332}
+{"vertex": 27, "type": "vertex_ctor", "timestamp": 416860363158}
+{"vertex": 28, "type": "vertex_ctor", "timestamp": 416860363439}
+{"pre": 7, "post": 26, "speculative": true, "type": "edge", "timestamp": 416860375563}
+{"pre": 25, "post": 27, "speculative": false, "type": "edge", "timestamp": 416860380852}
+{"pre": 24, "post": 28, "speculative": false, "type": "edge", "timestamp": 416860381253}
+{"vertex": 25, "type": "vertex_dtor", "timestamp": 416860397374}
+{"vertex": 24, "type": "vertex_dtor", "timestamp": 416860397875}
+{"vertex": 29, "type": "vertex_ctor", "timestamp": 416860409607}
+{"vertex": 30, "type": "vertex_ctor", "timestamp": 416860410159}
+{"vertex": 29, "type": "vertex_dtor", "timestamp": 416860423123}
+{"vertex": 30, "type": "vertex_dtor", "timestamp": 416860423393}
+{"vertex": 31, "type": "vertex_ctor", "timestamp": 416860466065}
+{"pre": 26, "post": 31, "speculative": false, "type": "edge", "timestamp": 416860492816}
+{"vertex": 32, "type": "vertex_ctor", "timestamp": 416860517363}
+{"vertex": 26, "type": "vertex_dtor", "timestamp": 416860517754}
+{"vertex": 33, "type": "vertex_ctor", "timestamp": 416860536199}
+{"pre": 6, "post": 32, "speculative": false, "type": "edge", "timestamp": 416860536499}
+{"vertex": 34, "type": "vertex_ctor", "timestamp": 416860554824}
+{"vertex": 33, "type": "vertex_dtor", "timestamp": 416860556187}
+{"pre": 7, "post": 34, "speculative": true, "type": "edge", "timestamp": 416860571936}
+{"vertex": 35, "type": "vertex_ctor", "timestamp": 416860588859}
+{"pre": 7, "post": 35, "speculative": true, "type": "edge", "timestamp": 416860606273}
+{"vertex": 36, "type": "vertex_ctor", "timestamp": 416860627894}
+{"vertex": 37, "type": "vertex_ctor", "timestamp": 416860641209}
+{"pre": 35, "post": 37, "speculative": false, "type": "edge", "timestamp": 416860658292}
+{"vertex": 35, "type": "vertex_dtor", "timestamp": 416860682467}
+{"vertex": 38, "type": "vertex_ctor", "timestamp": 416860694771}
+{"pre": 32, "post": 36, "speculative": false, "type": "edge", "timestamp": 416860712755}
+{"vertex": 38, "type": "vertex_dtor", "timestamp": 416860729758}
+{"pre": 32, "post": 34, "speculative": false, "type": "edge", "timestamp": 416860747713}
+{"vertex": 39, "type": "vertex_ctor", "timestamp": 416860764735}
+{"pre": 7, "post": 39, "speculative": true, "type": "edge", "timestamp": 416860781748}
+{"vertex": 40, "type": "vertex_ctor", "timestamp": 416860798440}
+{"pre": 7, "post": 40, "speculative": true, "type": "edge", "timestamp": 416860815712}
+{"vertex": 41, "type": "vertex_ctor", "timestamp": 416860832474}
+{"vertex": 42, "type": "vertex_ctor", "timestamp": 416860845108}
+{"pre": 40, "post": 42, "speculative": false, "type": "edge", "timestamp": 416860862241}
+{"vertex": 40, "type": "vertex_dtor", "timestamp": 416860878532}
+{"vertex": 43, "type": "vertex_ctor", "timestamp": 416860890585}
+{"pre": 34, "post": 41, "speculative": false, "type": "edge", "timestamp": 416860908539}
+{"vertex": 43, "type": "vertex_dtor", "timestamp": 416860927906}
+{"pre": 34, "post": 39, "speculative": false, "type": "edge", "timestamp": 416860945470}
+{"vertex": 44, "type": "vertex_ctor", "timestamp": 416860962021}
+{"pre": 7, "post": 44, "speculative": true, "type": "edge", "timestamp": 416860979044}
+{"vertex": 45, "type": "vertex_ctor", "timestamp": 416860995715}
+{"pre": 7, "post": 45, "speculative": true, "type": "edge", "timestamp": 416861013009}
+{"vertex": 46, "type": "vertex_ctor", "timestamp": 416861029741}
+{"vertex": 47, "type": "vertex_ctor", "timestamp": 416861042405}
+{"pre": 45, "post": 47, "speculative": false, "type": "edge", "timestamp": 416861059508}
+{"vertex": 45, "type": "vertex_dtor", "timestamp": 416861075809}
+{"vertex": 48, "type": "vertex_ctor", "timestamp": 416861087842}
+{"pre": 39, "post": 46, "speculative": false, "type": "edge", "timestamp": 416861105665}
+{"vertex": 48, "type": "vertex_dtor", "timestamp": 416861122498}
+{"pre": 39, "post": 44, "speculative": false, "type": "edge", "timestamp": 416861140162}
+{"vertex": 44, "type": "vertex_dtor", "timestamp": 416861156943}
+{"vertex": 49, "type": "vertex_ctor", "timestamp": 416861168586}
+{"vertex": 39, "type": "vertex_dtor", "timestamp": 416861169388}
+{"vertex": 34, "type": "vertex_dtor", "timestamp": 416861183715}
+{"vertex": 50, "type": "vertex_ctor", "timestamp": 416861187642}
+{"vertex": 32, "type": "vertex_dtor", "timestamp": 416861196088}
+{"vertex": 51, "type": "vertex_ctor", "timestamp": 416861201529}
+{"vertex": 52, "type": "vertex_ctor", "timestamp": 416861215365}
+{"vertex": 53, "type": "vertex_ctor", "timestamp": 416861228480}
+{"vertex": 54, "type": "vertex_ctor", "timestamp": 416861242316}
+{"vertex": 55, "type": "vertex_ctor", "timestamp": 416861257436}
+{"vertex": 56, "type": "vertex_ctor", "timestamp": 416861270770}
+{"pre": 7, "post": 56, "speculative": true, "type": "edge", "timestamp": 416861299776}
+{"vertex": 57, "type": "vertex_ctor", "timestamp": 416861323912}
+{"pre": 56, "post": 57, "speculative": false, "type": "edge", "timestamp": 416861341416}
+{"vertex": 56, "type": "vertex_dtor", "timestamp": 416861358067}
+{"vertex": 58, "type": "vertex_ctor", "timestamp": 416861370241}
+{"vertex": 58, "type": "vertex_dtor", "timestamp": 416861382864}
+{"vertex": 59, "type": "vertex_ctor", "timestamp": 416861395038}
+{"pre": 57, "post": 59, "speculative": false, "type": "edge", "timestamp": 416861412211}
+{"vertex": 60, "type": "vertex_ctor", "timestamp": 416861429624}
+{"pre": 57, "post": 60, "speculative": false, "type": "edge", "timestamp": 416861446786}
+{"vertex": 57, "type": "vertex_dtor", "timestamp": 416861463058}
+{"vertex": 61, "type": "vertex_ctor", "timestamp": 416861475180}
+{"sem": 16, "pre": 7, "post": 61, "count": 3, "type": "sem_wait", "timestamp": 416861492143}
+{"vertex": 62, "type": "vertex_ctor", "timestamp": 416861508475}
+{"pre": 59, "post": 62, "speculative": false, "type": "edge", "timestamp": 416861525567}
+{"vertex": 59, "type": "vertex_dtor", "timestamp": 416861541908}
+{"vertex": 63, "type": "vertex_ctor", "timestamp": 416861554041}
+{"vertex": 63, "type": "vertex_dtor", "timestamp": 416861566275}
+{"vertex": 61, "type": "vertex_dtor", "timestamp": 416861578718}
+{"vertex": 64, "type": "vertex_ctor", "timestamp": 416861592204}
+{"vertex": 65, "type": "vertex_ctor", "timestamp": 416861602394}
+{"pre": 7, "post": 64, "speculative": true, "type": "edge", "timestamp": 416861611331}
+{"vertex": 66, "type": "vertex_ctor", "timestamp": 416861628424}
+{"vertex": 67, "type": "vertex_ctor", "timestamp": 416861632211}
+{"pre": 7, "post": 66, "speculative": true, "type": "edge", "timestamp": 416861645827}
+{"vertex": 68, "type": "vertex_ctor", "timestamp": 416861653251}
+{"vertex": 69, "type": "vertex_ctor", "timestamp": 416861662989}
+{"vertex": 70, "type": "vertex_ctor", "timestamp": 416861673831}
+{"vertex": 71, "type": "vertex_ctor", "timestamp": 416861675594}
+{"pre": 66, "post": 71, "speculative": false, "type": "edge", "timestamp": 416861692796}
+{"vertex": 72, "type": "vertex_ctor", "timestamp": 416861693528}
+{"vertex": 66, "type": "vertex_dtor", "timestamp": 416861709188}
+{"vertex": 73, "type": "vertex_ctor", "timestamp": 416861713816}
+{"vertex": 74, "type": "vertex_ctor", "timestamp": 416861721401}
+{"vertex": 75, "type": "vertex_ctor", "timestamp": 416861735899}
+{"pre": 62, "post": 69, "speculative": false, "type": "edge", "timestamp": 416861739636}
+{"vertex": 76, "type": "vertex_ctor", "timestamp": 416861755426}
+{"vertex": 74, "type": "vertex_dtor", "timestamp": 416861756637}
+{"pre": 62, "post": 64, "speculative": false, "type": "edge", "timestamp": 416861774292}
+{"pre": 7, "post": 76, "speculative": true, "type": "edge", "timestamp": 416861797727}
+{"vertex": 64, "type": "vertex_dtor", "timestamp": 416861804369}
+{"vertex": 62, "type": "vertex_dtor", "timestamp": 416861817044}
+{"vertex": 77, "type": "vertex_ctor", "timestamp": 416861833344}
+{"pre": 76, "post": 77, "speculative": false, "type": "edge", "timestamp": 416861859895}
+{"vertex": 76, "type": "vertex_dtor", "timestamp": 416861884843}
+{"vertex": 78, "type": "vertex_ctor", "timestamp": 416861886436}
+{"vertex": 79, "type": "vertex_ctor", "timestamp": 416861899301}
+{"vertex": 80, "type": "vertex_ctor", "timestamp": 416861903198}
+{"vertex": 81, "type": "vertex_ctor", "timestamp": 416861915201}
+{"pre": 27, "post": 79, "speculative": true, "type": "edge", "timestamp": 416861916854}
+{"vertex": 80, "type": "vertex_dtor", "timestamp": 416861921933}
+{"vertex": 82, "type": "vertex_ctor", "timestamp": 416861934598}
+{"vertex": 83, "type": "vertex_ctor", "timestamp": 416861935590}
+{"vertex": 84, "type": "vertex_ctor", "timestamp": 416861940359}
+{"vertex": 85, "type": "vertex_ctor", "timestamp": 416861949666}
+{"pre": 79, "post": 82, "speculative": false, "type": "edge", "timestamp": 416861952111}
+{"vertex": 86, "type": "vertex_ctor", "timestamp": 416861963473}
+{"pre": 77, "post": 84, "speculative": false, "type": "edge", "timestamp": 416861966138}
+{"vertex": 87, "type": "vertex_ctor", "timestamp": 416861970536}
+{"vertex": 88, "type": "vertex_ctor", "timestamp": 416861976678}
+{"pre": 27, "post": 87, "speculative": true, "type": "edge", "timestamp": 416861987779}
+{"vertex": 89, "type": "vertex_ctor", "timestamp": 416861990475}
+{"vertex": 90, "type": "vertex_ctor", "timestamp": 416861991457}
+{"vertex": 91, "type": "vertex_ctor", "timestamp": 416862004982}
+{"sem": 10, "pre": 27, "post": 87, "count": 1, "type": "sem_wait", "timestamp": 416862009090}
+{"pre": 77, "post": 90, "speculative": false, "type": "edge", "timestamp": 416862017426}
+{"vertex": 92, "type": "vertex_ctor", "timestamp": 416862025411}
+{"sem": 10, "post": 87, "type": "sem_wait_completed", "timestamp": 416862026523}
+{"vertex": 93, "type": "vertex_ctor", "timestamp": 416862040140}
+{"vertex": 77, "type": "vertex_dtor", "timestamp": 416862042023}
+{"pre": 7, "post": 92, "speculative": true, "type": "edge", "timestamp": 416862043326}
+{"pre": 87, "post": 93, "speculative": false, "type": "edge", "timestamp": 416862057262}
+{"vertex": 94, "type": "vertex_ctor", "timestamp": 416862060137}
+{"vertex": 95, "type": "vertex_ctor", "timestamp": 416862060648}
+{"vertex": 87, "type": "vertex_dtor", "timestamp": 416862073614}
+{"pre": 92, "post": 95, "speculative": false, "type": "edge", "timestamp": 416862077882}
+{"sem": 21, "pre": 7, "post": 94, "count": 3, "type": "sem_wait", "timestamp": 416862085255}
+{"vertex": 96, "type": "vertex_ctor", "timestamp": 416862085756}
+{"vertex": 92, "type": "vertex_dtor", "timestamp": 416862094442}
+{"vertex": 96, "type": "vertex_dtor", "timestamp": 416862098311}
+{"vertex": 97, "type": "vertex_ctor", "timestamp": 416862106666}
+{"vertex": 98, "type": "vertex_ctor", "timestamp": 416862109772}
+{"vertex": 97, "type": "vertex_dtor", "timestamp": 416862119140}
+{"vertex": 99, "type": "vertex_ctor", "timestamp": 416862128398}
+{"vertex": 100, "type": "vertex_ctor", "timestamp": 416862131313}
+{"pre": 84, "post": 98, "speculative": false, "type": "edge", "timestamp": 416862136153}
+{"pre": 95, "post": 100, "speculative": false, "type": "edge", "timestamp": 416862148416}
+{"pre": 93, "post": 99, "speculative": true, "type": "edge", "timestamp": 416862149818}
+{"vertex": 84, "type": "vertex_dtor", "timestamp": 416862160910}
+{"vertex": 101, "type": "vertex_ctor", "timestamp": 416862165438}
+{"pre": 93, "post": 99, "speculative": false, "type": "edge", "timestamp": 416862172362}
+{"vertex": 102, "type": "vertex_ctor", "timestamp": 416862179254}
+{"pre": 95, "post": 101, "speculative": false, "type": "edge", "timestamp": 416862182631}
+{"vertex": 93, "type": "vertex_dtor", "timestamp": 416862189134}
+{"vertex": 102, "type": "vertex_dtor", "timestamp": 416862197510}
+{"vertex": 95, "type": "vertex_dtor", "timestamp": 416862199022}
+{"vertex": 103, "type": "vertex_ctor", "timestamp": 416862214232}
+{"vertex": 94, "type": "vertex_dtor", "timestamp": 416862216246}
+{"vertex": 104, "type": "vertex_ctor", "timestamp": 416862220263}
+{"sem": 8, "pre": 7, "post": 103, "count": 3, "type": "sem_wait", "timestamp": 416862232005}
+{"vertex": 105, "type": "vertex_ctor", "timestamp": 416862236374}
+{"pre": 99, "post": 104, "speculative": false, "type": "edge", "timestamp": 416862237356}
+{"vertex": 106, "type": "vertex_ctor", "timestamp": 416862248397}
+{"vertex": 99, "type": "vertex_dtor", "timestamp": 416862253727}
+{"pre": 7, "post": 105, "speculative": true, "type": "edge", "timestamp": 416862265380}
+{"pre": 100, "post": 106, "speculative": false, "type": "edge", "timestamp": 416862265500}
+{"vertex": 107, "type": "vertex_ctor", "timestamp": 416862265770}
+{"vertex": 104, "type": "vertex_dtor", "timestamp": 416862289204}
+{"vertex": 100, "type": "vertex_dtor", "timestamp": 416862293663}
+{"vertex": 108, "type": "vertex_ctor", "timestamp": 416862304013}
+{"vertex": 109, "type": "vertex_ctor", "timestamp": 416862307800}
+{"vertex": 110, "type": "vertex_ctor", "timestamp": 416862308041}
+{"vertex": 109, "type": "vertex_dtor", "timestamp": 416862319983}
+{"pre": 107, "post": 108, "speculative": true, "type": "edge", "timestamp": 416862321186}
+{"vertex": 103, "type": "vertex_dtor", "timestamp": 416862332447}
+{"pre": 7, "post": 110, "speculative": true, "type": "edge", "timestamp": 416862334010}
+{"pre": 107, "post": 108, "speculative": false, "type": "edge", "timestamp": 416862343418}
+{"vertex": 111, "type": "vertex_ctor", "timestamp": 416862345441}
+{"vertex": 112, "type": "vertex_ctor", "timestamp": 416862359820}
+{"vertex": 108, "type": "vertex_dtor", "timestamp": 416862360130}
+{"pre": 7, "post": 111, "speculative": true, "type": "edge", "timestamp": 416862362635}
+{"vertex": 107, "type": "vertex_dtor", "timestamp": 416862372804}
+{"vertex": 113, "type": "vertex_ctor", "timestamp": 416862378957}
+{"vertex": 114, "type": "vertex_ctor", "timestamp": 416862379447}
+{"vertex": 115, "type": "vertex_ctor", "timestamp": 416862385930}
+{"pre": 7, "post": 114, "speculative": true, "type": "edge", "timestamp": 416862396790}
+{"vertex": 116, "type": "vertex_ctor", "timestamp": 416862399054}
+{"pre": 110, "post": 113, "speculative": false, "type": "edge", "timestamp": 416862404775}
+{"vertex": 117, "type": "vertex_ctor", "timestamp": 416862413763}
+{"pre": 27, "post": 116, "speculative": true, "type": "edge", "timestamp": 416862418772}
+{"vertex": 118, "type": "vertex_ctor", "timestamp": 416862426396}
+{"vertex": 110, "type": "vertex_dtor", "timestamp": 416862429662}
+{"vertex": 119, "type": "vertex_ctor", "timestamp": 416862436676}
+{"pre": 114, "post": 118, "speculative": false, "type": "edge", "timestamp": 416862443620}
+{"vertex": 120, "type": "vertex_ctor", "timestamp": 416862448218}
+{"pre": 82, "post": 119, "speculative": false, "type": "edge", "timestamp": 416862453839}
+{"vertex": 114, "type": "vertex_dtor", "timestamp": 416862460070}
+{"vertex": 82, "type": "vertex_dtor", "timestamp": 416862470271}
+{"vertex": 121, "type": "vertex_ctor", "timestamp": 416862472204}
+{"pre": 98, "post": 112, "speculative": false, "type": "edge", "timestamp": 416862475690}
+{"vertex": 122, "type": "vertex_ctor", "timestamp": 416862482483}
+{"pre": 106, "post": 117, "speculative": false, "type": "edge", "timestamp": 416862490249}
+{"vertex": 122, "type": "vertex_dtor", "timestamp": 416862495448}
+{"vertex": 120, "type": "vertex_dtor", "timestamp": 416862501560}
+{"vertex": 121, "type": "vertex_dtor", "timestamp": 416862507190}
+{"pre": 106, "post": 111, "speculative": false, "type": "edge", "timestamp": 416862527229}
+{"pre": 98, "post": 105, "speculative": false, "type": "edge", "timestamp": 416862528652}
+{"sem": 16, "vertex": 27, "count": 1, "type": "sem_signal", "timestamp": 416862541235}
+{"vertex": 111, "type": "vertex_dtor", "timestamp": 416862544121}
+{"vertex": 105, "type": "vertex_dtor", "timestamp": 416862554071}
+{"vertex": 123, "type": "vertex_ctor", "timestamp": 416862555674}
+{"vertex": 106, "type": "vertex_dtor", "timestamp": 416862556695}
+{"vertex": 98, "type": "vertex_dtor", "timestamp": 416862572755}
+{"pre": 27, "post": 123, "speculative": true, "type": "edge", "timestamp": 416862572916}
+{"vertex": 123, "type": "vertex_dtor", "timestamp": 416862590009}
+{"vertex": 124, "type": "vertex_ctor", "timestamp": 416862619615}
+{"vertex": 125, "type": "vertex_ctor", "timestamp": 416862632149}
+{"sem": 8, "vertex": 28, "count": 1, "type": "sem_signal", "timestamp": 416862637710}
+{"vertex": 126, "type": "vertex_ctor", "timestamp": 416862651155}
+{"pre": 27, "post": 125, "speculative": true, "type": "edge", "timestamp": 416862651285}
+{"vertex": 127, "type": "vertex_ctor", "timestamp": 416862668418}
+{"pre": 28, "post": 126, "speculative": true, "type": "edge", "timestamp": 416862668489}
+{"vertex": 128, "type": "vertex_ctor", "timestamp": 416862678267}
+{"vertex": 126, "type": "vertex_dtor", "timestamp": 416862685671}
+{"pre": 125, "post": 127, "speculative": false, "type": "edge", "timestamp": 416862685901}
+{"vertex": 129, "type": "vertex_ctor", "timestamp": 416862697855}
+{"vertex": 130, "type": "vertex_ctor", "timestamp": 416862703195}
+{"vertex": 131, "type": "vertex_ctor", "timestamp": 416862715177}
+{"pre": 27, "post": 130, "speculative": true, "type": "edge", "timestamp": 416862720418}
+{"pre": 31, "post": 129, "speculative": true, "type": "edge", "timestamp": 416862723975}
+{"vertex": 132, "type": "vertex_ctor", "timestamp": 416862729655}
+{"sem": 13, "pre": 27, "post": 130, "count": 1, "type": "sem_wait", "timestamp": 416862741758}
+{"pre": 28, "post": 132, "speculative": true, "type": "edge", "timestamp": 416862746908}
+{"vertex": 133, "type": "vertex_ctor", "timestamp": 416862751848}
+{"sem": 13, "post": 130, "type": "sem_wait_completed", "timestamp": 416862759162}
+{"vertex": 134, "type": "vertex_ctor", "timestamp": 416862764211}
+{"vertex": 135, "type": "vertex_ctor", "timestamp": 416862772808}
+{"pre": 129, "post": 133, "speculative": false, "type": "edge", "timestamp": 416862778949}
+{"pre": 132, "post": 134, "speculative": false, "type": "edge", "timestamp": 416862781614}
+{"pre": 130, "post": 135, "speculative": false, "type": "edge", "timestamp": 416862790000}
+{"vertex": 136, "type": "vertex_ctor", "timestamp": 416862799158}
+{"vertex": 130, "type": "vertex_dtor", "timestamp": 416862806302}
+{"vertex": 137, "type": "vertex_ctor", "timestamp": 416862809638}
+{"pre": 28, "post": 136, "speculative": true, "type": "edge", "timestamp": 416862816291}
+{"vertex": 138, "type": "vertex_ctor", "timestamp": 416862818435}
+{"vertex": 138, "type": "vertex_dtor", "timestamp": 416862831029}
+{"pre": 31, "post": 137, "speculative": true, "type": "edge", "timestamp": 416862836149}
+{"sem": 3, "pre": 28, "post": 136, "count": 1, "type": "sem_wait", "timestamp": 416862837371}
+{"sem": 3, "post": 136, "type": "sem_wait_completed", "timestamp": 416862854794}
+{"vertex": 139, "type": "vertex_ctor", "timestamp": 416862860605}
+{"sem": 11, "pre": 31, "post": 137, "count": 1, "type": "sem_wait", "timestamp": 416862867829}
+{"vertex": 140, "type": "vertex_ctor", "timestamp": 416862868300}
+{"pre": 135, "post": 139, "speculative": true, "type": "edge", "timestamp": 416862877838}
+{"pre": 136, "post": 140, "speculative": false, "type": "edge", "timestamp": 416862885473}
+{"sem": 11, "post": 137, "type": "sem_wait_completed", "timestamp": 416862893398}
+{"pre": 135, "post": 139, "speculative": false, "type": "edge", "timestamp": 416862900211}
+{"vertex": 136, "type": "vertex_dtor", "timestamp": 416862901784}
+{"vertex": 141, "type": "vertex_ctor", "timestamp": 416862913747}
+{"vertex": 142, "type": "vertex_ctor", "timestamp": 416862913867}
+{"vertex": 135, "type": "vertex_dtor", "timestamp": 416862919518}
+{"vertex": 142, "type": "vertex_dtor", "timestamp": 416862926491}
+{"pre": 137, "post": 141, "speculative": false, "type": "edge", "timestamp": 416862939896}
+{"vertex": 143, "type": "vertex_ctor", "timestamp": 416862949766}
+{"vertex": 144, "type": "vertex_ctor", "timestamp": 416862956017}
+{"vertex": 137, "type": "vertex_dtor", "timestamp": 416862964784}
+{"pre": 139, "post": 143, "speculative": false, "type": "edge", "timestamp": 416862966918}
+{"pre": 140, "post": 144, "speculative": true, "type": "edge", "timestamp": 416862973240}
+{"vertex": 145, "type": "vertex_ctor", "timestamp": 416862983139}
+{"vertex": 139, "type": "vertex_dtor", "timestamp": 416862983310}
+{"vertex": 146, "type": "vertex_ctor", "timestamp": 416862995442}
+{"pre": 140, "post": 144, "speculative": false, "type": "edge", "timestamp": 416862995673}
+{"vertex": 145, "type": "vertex_dtor", "timestamp": 416863001995}
+{"vertex": 143, "type": "vertex_dtor", "timestamp": 416863008718}
+{"vertex": 140, "type": "vertex_dtor", "timestamp": 416863014318}
+{"vertex": 147, "type": "vertex_ctor", "timestamp": 416863021021}
+{"pre": 146, "post": 147, "speculative": true, "type": "edge", "timestamp": 416863038224}
+{"vertex": 148, "type": "vertex_ctor", "timestamp": 416863044696}
+{"vertex": 149, "type": "vertex_ctor", "timestamp": 416863047792}
+{"pre": 146, "post": 147, "speculative": false, "type": "edge", "timestamp": 416863060306}
+{"pre": 144, "post": 148, "speculative": false, "type": "edge", "timestamp": 416863061909}
+{"vertex": 147, "type": "vertex_dtor", "timestamp": 416863076928}
+{"vertex": 144, "type": "vertex_dtor", "timestamp": 416863078320}
+{"pre": 141, "post": 149, "speculative": true, "type": "edge", "timestamp": 416863080144}
+{"vertex": 146, "type": "vertex_dtor", "timestamp": 416863089513}
+{"vertex": 150, "type": "vertex_ctor", "timestamp": 416863090444}
+{"vertex": 151, "type": "vertex_ctor", "timestamp": 416863102757}
+{"vertex": 148, "type": "vertex_dtor", "timestamp": 416863103889}
+{"pre": 141, "post": 149, "speculative": false, "type": "edge", "timestamp": 416863113959}
+{"vertex": 152, "type": "vertex_ctor", "timestamp": 416863116123}
+{"pre": 127, "post": 151, "speculative": false, "type": "edge", "timestamp": 416863120031}
+{"pre": 150, "post": 152, "speculative": true, "type": "edge", "timestamp": 416863133316}
+{"vertex": 127, "type": "vertex_dtor", "timestamp": 416863136401}
+{"vertex": 141, "type": "vertex_dtor", "timestamp": 416863139327}
+{"vertex": 153, "type": "vertex_ctor", "timestamp": 416863148595}
+{"pre": 150, "post": 152, "speculative": false, "type": "edge", "timestamp": 416863155327}
+{"vertex": 154, "type": "vertex_ctor", "timestamp": 416863163673}
+{"vertex": 152, "type": "vertex_dtor", "timestamp": 416863172080}
+{"pre": 119, "post": 154, "speculative": false, "type": "edge", "timestamp": 416863180927}
+{"vertex": 150, "type": "vertex_dtor", "timestamp": 416863184654}
+{"vertex": 155, "type": "vertex_ctor", "timestamp": 416863186687}
+{"vertex": 119, "type": "vertex_dtor", "timestamp": 416863197439}
+{"vertex": 156, "type": "vertex_ctor", "timestamp": 416863197539}
+{"vertex": 157, "type": "vertex_ctor", "timestamp": 416863209581}
+{"vertex": 158, "type": "vertex_ctor", "timestamp": 416863210383}
+{"pre": 149, "post": 155, "speculative": false, "type": "edge", "timestamp": 416863213609}
+{"vertex": 157, "type": "vertex_dtor", "timestamp": 416863222205}
+{"pre": 28, "post": 158, "speculative": true, "type": "edge", "timestamp": 416863227766}
+{"vertex": 153, "type": "vertex_dtor", "timestamp": 416863235150}
+{"vertex": 149, "type": "vertex_dtor", "timestamp": 416863239498}
+{"vertex": 159, "type": "vertex_ctor", "timestamp": 416863247013}
+{"vertex": 160, "type": "vertex_ctor", "timestamp": 416863247654}
+{"vertex": 161, "type": "vertex_ctor", "timestamp": 416863259577}
+{"pre": 134, "post": 159, "speculative": false, "type": "edge", "timestamp": 416863264326}
+{"pre": 116, "post": 160, "speculative": false, "type": "edge", "timestamp": 416863265197}
+{"vertex": 134, "type": "vertex_dtor", "timestamp": 416863291788}
+{"pre": 151, "post": 115, "speculative": false, "type": "edge", "timestamp": 416863296878}
+{"vertex": 155, "type": "vertex_dtor", "timestamp": 416863298030}
+{"vertex": 162, "type": "vertex_ctor", "timestamp": 416863306135}
+{"vertex": 151, "type": "vertex_dtor", "timestamp": 416863315934}
+{"vertex": 162, "type": "vertex_dtor", "timestamp": 416863319160}
+{"vertex": 163, "type": "vertex_ctor", "timestamp": 416863321535}
+{"pre": 27, "post": 160, "speculative": false, "type": "edge", "timestamp": 416863334509}
+{"pre": 161, "post": 163, "speculative": true, "type": "edge", "timestamp": 416863347966}
+{"vertex": 164, "type": "vertex_ctor", "timestamp": 416863348867}
+{"vertex": 160, "type": "vertex_dtor", "timestamp": 416863351432}
+{"vertex": 165, "type": "vertex_ctor", "timestamp": 416863361501}
+{"vertex": 166, "type": "vertex_ctor", "timestamp": 416863365007}
+{"vertex": 167, "type": "vertex_ctor", "timestamp": 416863378794}
+{"pre": 28, "post": 165, "speculative": true, "type": "edge", "timestamp": 416863378945}
+{"pre": 161, "post": 163, "speculative": false, "type": "edge", "timestamp": 416863381870}
+{"vertex": 168, "type": "vertex_ctor", "timestamp": 416863394264}
+{"vertex": 169, "type": "vertex_ctor", "timestamp": 416863396067}
+{"vertex": 163, "type": "vertex_dtor", "timestamp": 416863407038}
+{"vertex": 170, "type": "vertex_ctor", "timestamp": 416863407809}
+{"pre": 165, "post": 169, "speculative": false, "type": "edge", "timestamp": 416863413550}
+{"vertex": 161, "type": "vertex_dtor", "timestamp": 416863426185}
+{"vertex": 171, "type": "vertex_ctor", "timestamp": 416863430804}
+{"vertex": 49, "type": "vertex_dtor", "timestamp": 416863439340}
+{"vertex": 172, "type": "vertex_ctor", "timestamp": 416863446092}
+{"pre": 28, "post": 171, "speculative": true, "type": "edge", "timestamp": 416863447936}
+{"vertex": 50, "type": "vertex_dtor", "timestamp": 416863453527}
+{"vertex": 173, "type": "vertex_ctor", "timestamp": 416863465690}
+{"vertex": 51, "type": "vertex_dtor", "timestamp": 416863466812}
+{"sem": 4, "pre": 28, "post": 171, "count": 1, "type": "sem_wait", "timestamp": 416863469146}
+{"vertex": 52, "type": "vertex_dtor", "timestamp": 416863479727}
+{"sem": 4, "post": 171, "type": "sem_wait_completed", "timestamp": 416863486540}
+{"vertex": 53, "type": "vertex_dtor", "timestamp": 416863492972}
+{"pre": 31, "post": 173, "speculative": true, "type": "edge", "timestamp": 416863495687}
+{"vertex": 174, "type": "vertex_ctor", "timestamp": 416863500065}
+{"vertex": 54, "type": "vertex_dtor", "timestamp": 416863508292}
+{"pre": 171, "post": 174, "speculative": false, "type": "edge", "timestamp": 416863517218}
+{"vertex": 55, "type": "vertex_dtor", "timestamp": 416863521056}
+{"vertex": 175, "type": "vertex_ctor", "timestamp": 416863522328}
+{"vertex": 166, "type": "vertex_dtor", "timestamp": 416863533890}
+{"vertex": 171, "type": "vertex_dtor", "timestamp": 416863535514}
+{"vertex": 167, "type": "vertex_dtor", "timestamp": 416863547126}
+{"vertex": 176, "type": "vertex_ctor", "timestamp": 416863547656}
+{"pre": 133, "post": 175, "speculative": false, "type": "edge", "timestamp": 416863548257}
+{"vertex": 168, "type": "vertex_dtor", "timestamp": 416863559930}
+{"vertex": 176, "type": "vertex_dtor", "timestamp": 416863560240}
+{"vertex": 133, "type": "vertex_dtor", "timestamp": 416863572564}
+{"vertex": 170, "type": "vertex_dtor", "timestamp": 416863572724}
+{"vertex": 177, "type": "vertex_ctor", "timestamp": 416863589686}
+{"vertex": 178, "type": "vertex_ctor", "timestamp": 416863590949}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863600528}
+{"pre": 174, "post": 177, "speculative": true, "type": "edge", "timestamp": 416863606980}
+{"vertex": 178, "type": "vertex_dtor", "timestamp": 416863610236}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863616357}
+{"pre": 174, "post": 177, "speculative": false, "type": "edge", "timestamp": 416863629363}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863631827}
+{"vertex": 174, "type": "vertex_dtor", "timestamp": 416863646024}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863646645}
+{"vertex": 179, "type": "vertex_ctor", "timestamp": 416863655683}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863661444}
+{"vertex": 180, "type": "vertex_ctor", "timestamp": 416863674488}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863676082}
+{"vertex": 181, "type": "vertex_ctor", "timestamp": 416863676202}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863690720}
+{"pre": 177, "post": 181, "speculative": false, "type": "edge", "timestamp": 416863693555}
+{"pre": 31, "post": 180, "speculative": true, "type": "edge", "timestamp": 416863700628}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863705388}
+{"vertex": 177, "type": "vertex_dtor", "timestamp": 416863709906}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863720036}
+{"vertex": 182, "type": "vertex_ctor", "timestamp": 416863722049}
+{"vertex": 183, "type": "vertex_ctor", "timestamp": 416863726457}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863734714}
+{"vertex": 181, "type": "vertex_dtor", "timestamp": 416863735245}
+{"vertex": 184, "type": "vertex_ctor", "timestamp": 416863747478}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863749432}
+{"pre": 180, "post": 183, "speculative": false, "type": "edge", "timestamp": 416863752707}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863764060}
+{"pre": 182, "post": 184, "speculative": true, "type": "edge", "timestamp": 416863764862}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863778677}
+{"vertex": 185, "type": "vertex_ctor", "timestamp": 416863779008}
+{"pre": 182, "post": 184, "speculative": false, "type": "edge", "timestamp": 416863788646}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863793316}
+{"pre": 31, "post": 185, "speculative": true, "type": "edge", "timestamp": 416863804847}
+{"vertex": 184, "type": "vertex_dtor", "timestamp": 416863805459}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863807963}
+{"vertex": 182, "type": "vertex_dtor", "timestamp": 416863818033}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863822561}
+{"vertex": 186, "type": "vertex_ctor", "timestamp": 416863831368}
+{"sem": 17, "pre": 31, "post": 185, "count": 1, "type": "sem_wait", "timestamp": 416863836287}
+{"pre": 169, "post": 186, "speculative": false, "type": "edge", "timestamp": 416863851977}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416863855143}
+{"sem": 17, "post": 185, "type": "sem_wait_completed", "timestamp": 416863867537}
+{"vertex": 169, "type": "vertex_dtor", "timestamp": 416863868599}
+{"vertex": 187, "type": "vertex_ctor", "timestamp": 416863880832}
+{"vertex": 188, "type": "vertex_ctor", "timestamp": 416863891192}
+{"vertex": 189, "type": "vertex_ctor", "timestamp": 416863893707}
+{"pre": 159, "post": 189, "speculative": false, "type": "edge", "timestamp": 416863911020}
+{"pre": 185, "post": 188, "speculative": false, "type": "edge", "timestamp": 416863917392}
+{"vertex": 159, "type": "vertex_dtor", "timestamp": 416863927481}
+{"vertex": 190, "type": "vertex_ctor", "timestamp": 416863939645}
+{"vertex": 185, "type": "vertex_dtor", "timestamp": 416863942209}
+{"vertex": 190, "type": "vertex_dtor", "timestamp": 416863952218}
+{"vertex": 191, "type": "vertex_ctor", "timestamp": 416863960976}
+{"vertex": 187, "type": "vertex_dtor", "timestamp": 416863965053}
+{"vertex": 192, "type": "vertex_ctor", "timestamp": 416863977577}
+{"vertex": 191, "type": "vertex_dtor", "timestamp": 416863980823}
+{"pre": 158, "post": 192, "speculative": false, "type": "edge", "timestamp": 416863995221}
+{"pre": 186, "post": 156, "speculative": false, "type": "edge", "timestamp": 416864017373}
+{"vertex": 193, "type": "vertex_ctor", "timestamp": 416864028534}
+{"vertex": 186, "type": "vertex_dtor", "timestamp": 416864034175}
+{"pre": 28, "post": 192, "speculative": false, "type": "edge", "timestamp": 416864054223}
+{"pre": 188, "post": 193, "speculative": true, "type": "edge", "timestamp": 416864055055}
+{"vertex": 192, "type": "vertex_dtor", "timestamp": 416864071085}
+{"vertex": 194, "type": "vertex_ctor", "timestamp": 416864084672}
+{"pre": 188, "post": 193, "speculative": false, "type": "edge", "timestamp": 416864089420}
+{"vertex": 195, "type": "vertex_ctor", "timestamp": 416864098307}
+{"vertex": 196, "type": "vertex_ctor", "timestamp": 416864113306}
+{"vertex": 188, "type": "vertex_dtor", "timestamp": 416864115070}
+{"vertex": 197, "type": "vertex_ctor", "timestamp": 416864126601}
+{"vertex": 81, "type": "vertex_dtor", "timestamp": 416864151539}
+{"vertex": 198, "type": "vertex_ctor", "timestamp": 416864159424}
+{"vertex": 83, "type": "vertex_dtor", "timestamp": 416864165526}
+{"pre": 193, "post": 198, "speculative": false, "type": "edge", "timestamp": 416864177077}
+{"vertex": 85, "type": "vertex_dtor", "timestamp": 416864178771}
+{"vertex": 86, "type": "vertex_dtor", "timestamp": 416864191656}
+{"vertex": 193, "type": "vertex_dtor", "timestamp": 416864193760}
+{"vertex": 88, "type": "vertex_dtor", "timestamp": 416864204750}
+{"vertex": 199, "type": "vertex_ctor", "timestamp": 416864206053}
+{"vertex": 89, "type": "vertex_dtor", "timestamp": 416864217595}
+{"vertex": 198, "type": "vertex_dtor", "timestamp": 416864219739}
+{"vertex": 91, "type": "vertex_dtor", "timestamp": 416864230399}
+{"vertex": 200, "type": "vertex_ctor", "timestamp": 416864235349}
+{"vertex": 194, "type": "vertex_dtor", "timestamp": 416864243164}
+{"pre": 199, "post": 200, "speculative": true, "type": "edge", "timestamp": 416864252752}
+{"vertex": 195, "type": "vertex_dtor", "timestamp": 416864256439}
+{"vertex": 196, "type": "vertex_dtor", "timestamp": 416864269294}
+{"pre": 199, "post": 200, "speculative": false, "type": "edge", "timestamp": 416864288931}
+{"vertex": 197, "type": "vertex_dtor", "timestamp": 416864295183}
+{"vertex": 200, "type": "vertex_dtor", "timestamp": 416864309040}
+{"vertex": 199, "type": "vertex_dtor", "timestamp": 416864321974}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864332745}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864334699}
+{"vertex": 201, "type": "vertex_ctor", "timestamp": 416864336181}
+{"pre": 183, "post": 201, "speculative": false, "type": "edge", "timestamp": 416864353504}
+{"sem": 8, "vertex": 78, "count": 1, "type": "sem_signal", "timestamp": 416864366530}
+{"vertex": 183, "type": "vertex_dtor", "timestamp": 416864370116}
+{"sem": 16, "vertex": 131, "count": 1, "type": "sem_signal", "timestamp": 416864372922}
+{"vertex": 202, "type": "vertex_ctor", "timestamp": 416864379844}
+{"vertex": 203, "type": "vertex_ctor", "timestamp": 416864382360}
+{"vertex": 204, "type": "vertex_ctor", "timestamp": 416864386257}
+{"vertex": 205, "type": "vertex_ctor", "timestamp": 416864395414}
+{"pre": 78, "post": 202, "speculative": true, "type": "edge", "timestamp": 416864397398}
+{"pre": 131, "post": 204, "speculative": true, "type": "edge", "timestamp": 416864404061}
+{"pre": 175, "post": 205, "speculative": false, "type": "edge", "timestamp": 416864412578}
+{"vertex": 175, "type": "vertex_dtor", "timestamp": 416864429029}
+{"vertex": 206, "type": "vertex_ctor", "timestamp": 416864435340}
+{"vertex": 207, "type": "vertex_ctor", "timestamp": 416864441222}
+{"vertex": 208, "type": "vertex_ctor", "timestamp": 416864441923}
+{"pre": 202, "post": 206, "speculative": false, "type": "edge", "timestamp": 416864452494}
+{"vertex": 207, "type": "vertex_dtor", "timestamp": 416864453816}
+{"pre": 204, "post": 208, "speculative": false, "type": "edge", "timestamp": 416864459126}
+{"vertex": 203, "type": "vertex_dtor", "timestamp": 416864466730}
+{"vertex": 202, "type": "vertex_dtor", "timestamp": 416864468875}
+{"vertex": 204, "type": "vertex_dtor", "timestamp": 416864475718}
+{"vertex": 209, "type": "vertex_ctor", "timestamp": 416864480998}
+{"vertex": 210, "type": "vertex_ctor", "timestamp": 416864487891}
+{"vertex": 206, "type": "vertex_dtor", "timestamp": 416864495114}
+{"vertex": 208, "type": "vertex_dtor", "timestamp": 416864501888}
+{"vertex": 211, "type": "vertex_ctor", "timestamp": 416864507298}
+{"vertex": 212, "type": "vertex_ctor", "timestamp": 416864514191}
+{"sem": 21, "vertex": 31, "count": 1, "type": "sem_signal", "timestamp": 416864515323}
+{"pre": 209, "post": 211, "speculative": true, "type": "edge", "timestamp": 416864524371}
+{"vertex": 213, "type": "vertex_ctor", "timestamp": 416864529661}
+{"pre": 210, "post": 212, "speculative": true, "type": "edge", "timestamp": 416864531314}
+{"pre": 209, "post": 211, "speculative": false, "type": "edge", "timestamp": 416864546533}
+{"pre": 31, "post": 213, "speculative": true, "type": "edge", "timestamp": 416864547124}
+{"pre": 210, "post": 212, "speculative": false, "type": "edge", "timestamp": 416864553496}
+{"vertex": 211, "type": "vertex_dtor", "timestamp": 416864563235}
+{"vertex": 213, "type": "vertex_dtor", "timestamp": 416864564227}
+{"vertex": 212, "type": "vertex_dtor", "timestamp": 416864570158}
+{"vertex": 209, "type": "vertex_dtor", "timestamp": 416864575588}
+{"vertex": 214, "type": "vertex_ctor", "timestamp": 416864576860}
+{"vertex": 210, "type": "vertex_dtor", "timestamp": 416864582552}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864591990}
+{"pre": 173, "post": 214, "speculative": false, "type": "edge", "timestamp": 416864594525}
+{"pre": 7, "post": 79, "speculative": false, "type": "edge", "timestamp": 416864603331}
+{"pre": 7, "post": 132, "speculative": false, "type": "edge", "timestamp": 416864613230}
+{"pre": 201, "post": 172, "speculative": false, "type": "edge", "timestamp": 416864617128}
+{"sem": 10, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416864619993}
+{"sem": 3, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416864629841}
+{"vertex": 79, "type": "vertex_dtor", "timestamp": 416864633499}
+{"vertex": 201, "type": "vertex_dtor", "timestamp": 416864633969}
+{"vertex": 78, "type": "vertex_dtor", "timestamp": 416864648177}
+{"pre": 31, "post": 214, "speculative": false, "type": "edge", "timestamp": 416864652525}
+{"vertex": 132, "type": "vertex_dtor", "timestamp": 416864652705}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864662804}
+{"vertex": 131, "type": "vertex_dtor", "timestamp": 416864665461}
+{"vertex": 214, "type": "vertex_dtor", "timestamp": 416864669337}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864678074}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864679707}
+{"vertex": 215, "type": "vertex_ctor", "timestamp": 416864683464}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864693283}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864694636}
+{"vertex": 216, "type": "vertex_ctor", "timestamp": 416864697331}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864708041}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864709474}
+{"vertex": 217, "type": "vertex_ctor", "timestamp": 416864714413}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864722679}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864724172}
+{"vertex": 218, "type": "vertex_ctor", "timestamp": 416864727829}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864737217}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864738810}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864753418}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864754219}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864769017}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864770480}
+{"vertex": 65, "type": "vertex_dtor", "timestamp": 416864771162}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864783736}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864785178}
+{"vertex": 67, "type": "vertex_dtor", "timestamp": 416864785349}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864798454}
+{"vertex": 68, "type": "vertex_dtor", "timestamp": 416864798754}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864799816}
+{"vertex": 70, "type": "vertex_dtor", "timestamp": 416864811669}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864813092}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864814425}
+{"vertex": 72, "type": "vertex_dtor", "timestamp": 416864824904}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864829012}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864835976}
+{"vertex": 73, "type": "vertex_dtor", "timestamp": 416864840134}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864843730}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864850984}
+{"vertex": 75, "type": "vertex_dtor", "timestamp": 416864853078}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864858228}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864865542}
+{"vertex": 215, "type": "vertex_dtor", "timestamp": 416864865903}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864872696}
+{"vertex": 216, "type": "vertex_dtor", "timestamp": 416864879178}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864880139}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864887213}
+{"vertex": 217, "type": "vertex_dtor", "timestamp": 416864891982}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864904897}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864904977}
+{"vertex": 218, "type": "vertex_dtor", "timestamp": 416864908844}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864929965}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864933311}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864954421}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416864961755}
+{"sem": 16, "vertex": 179, "count": 1, "type": "sem_signal", "timestamp": 416864978548}
+{"sem": 21, "vertex": 164, "count": 1, "type": "sem_signal", "timestamp": 416864988126}
+{"sem": 16, "post": 60, "type": "sem_wait_completed", "timestamp": 416864993306}
+{"sem": 8, "vertex": 128, "count": 1, "type": "sem_signal", "timestamp": 416864995730}
+{"vertex": 219, "type": "vertex_ctor", "timestamp": 416865001310}
+{"sem": 8, "post": 101, "type": "sem_wait_completed", "timestamp": 416865010419}
+{"pre": 179, "post": 60, "speculative": false, "type": "edge", "timestamp": 416865012332}
+{"pre": 164, "post": 219, "speculative": true, "type": "edge", "timestamp": 416865019004}
+{"pre": 128, "post": 101, "speculative": false, "type": "edge", "timestamp": 416865029334}
+{"vertex": 60, "type": "vertex_dtor", "timestamp": 416865030697}
+{"vertex": 220, "type": "vertex_ctor", "timestamp": 416865043571}
+{"vertex": 101, "type": "vertex_dtor", "timestamp": 416865047549}
+{"vertex": 221, "type": "vertex_ctor", "timestamp": 416865054352}
+{"vertex": 222, "type": "vertex_ctor", "timestamp": 416865060504}
+{"pre": 179, "post": 220, "speculative": true, "type": "edge", "timestamp": 416865060805}
+{"pre": 219, "post": 221, "speculative": false, "type": "edge", "timestamp": 416865071525}
+{"pre": 128, "post": 222, "speculative": true, "type": "edge", "timestamp": 416865077707}
+{"vertex": 219, "type": "vertex_dtor", "timestamp": 416865087936}
+{"vertex": 223, "type": "vertex_ctor", "timestamp": 416865095100}
+{"vertex": 224, "type": "vertex_ctor", "timestamp": 416865100139}
+{"vertex": 225, "type": "vertex_ctor", "timestamp": 416865111912}
+{"pre": 220, "post": 223, "speculative": false, "type": "edge", "timestamp": 416865112262}
+{"vertex": 221, "type": "vertex_dtor", "timestamp": 416865127532}
+{"pre": 222, "post": 225, "speculative": false, "type": "edge", "timestamp": 416865139975}
+{"vertex": 220, "type": "vertex_dtor", "timestamp": 416865141458}
+{"vertex": 226, "type": "vertex_ctor", "timestamp": 416865142410}
+{"vertex": 227, "type": "vertex_ctor", "timestamp": 416865153762}
+{"vertex": 222, "type": "vertex_dtor", "timestamp": 416865158962}
+{"pre": 224, "post": 226, "speculative": true, "type": "edge", "timestamp": 416865159713}
+{"vertex": 223, "type": "vertex_dtor", "timestamp": 416865167418}
+{"vertex": 228, "type": "vertex_ctor", "timestamp": 416865171154}
+{"vertex": 229, "type": "vertex_ctor", "timestamp": 416865179711}
+{"vertex": 225, "type": "vertex_dtor", "timestamp": 416865184901}
+{"pre": 224, "post": 226, "speculative": false, "type": "edge", "timestamp": 416865185172}
+{"pre": 227, "post": 229, "speculative": true, "type": "edge", "timestamp": 416865196894}
+{"vertex": 230, "type": "vertex_ctor", "timestamp": 416865197064}
+{"vertex": 226, "type": "vertex_dtor", "timestamp": 416865202045}
+{"pre": 228, "post": 230, "speculative": true, "type": "edge", "timestamp": 416865214097}
+{"vertex": 224, "type": "vertex_dtor", "timestamp": 416865214578}
+{"pre": 227, "post": 229, "speculative": false, "type": "edge", "timestamp": 416865219177}
+{"vertex": 229, "type": "vertex_dtor", "timestamp": 416865235789}
+{"pre": 228, "post": 230, "speculative": false, "type": "edge", "timestamp": 416865236299}
+{"vertex": 227, "type": "vertex_dtor", "timestamp": 416865248222}
+{"vertex": 230, "type": "vertex_dtor", "timestamp": 416865253031}
+{"sem": 21, "vertex": 124, "count": 1, "type": "sem_signal", "timestamp": 416865253532}
+{"vertex": 228, "type": "vertex_dtor", "timestamp": 416865265485}
+{"sem": 21, "post": 90, "type": "sem_wait_completed", "timestamp": 416865268792}
+{"pre": 69, "post": 71, "speculative": false, "type": "edge", "timestamp": 416865293519}
+{"pre": 124, "post": 90, "speculative": false, "type": "edge", "timestamp": 416865303197}
+{"vertex": 231, "type": "vertex_ctor", "timestamp": 416865313677}
+{"pre": 117, "post": 118, "speculative": false, "type": "edge", "timestamp": 416865314208}
+{"vertex": 90, "type": "vertex_dtor", "timestamp": 416865323075}
+{"pre": 69, "post": 231, "speculative": true, "type": "edge", "timestamp": 416865331110}
+{"vertex": 232, "type": "vertex_ctor", "timestamp": 416865331601}
+{"vertex": 233, "type": "vertex_ctor", "timestamp": 416865335919}
+{"pre": 117, "post": 232, "speculative": true, "type": "edge", "timestamp": 416865348794}
+{"pre": 124, "post": 233, "speculative": true, "type": "edge", "timestamp": 416865353213}
+{"pre": 231, "post": 15, "speculative": false, "type": "edge", "timestamp": 416865370294}
+{"vertex": 234, "type": "vertex_ctor", "timestamp": 416865386826}
+{"vertex": 235, "type": "vertex_ctor", "timestamp": 416865387448}
+{"pre": 232, "post": 6, "speculative": false, "type": "edge", "timestamp": 416865387779}
+{"pre": 231, "post": 234, "speculative": true, "type": "edge", "timestamp": 416865403839}
+{"vertex": 236, "type": "vertex_ctor", "timestamp": 416865404651}
+{"pre": 233, "post": 235, "speculative": false, "type": "edge", "timestamp": 416865404681}
+{"vertex": 233, "type": "vertex_dtor", "timestamp": 416865421242}
+{"pre": 232, "post": 236, "speculative": true, "type": "edge", "timestamp": 416865425671}
+{"pre": 231, "post": 234, "speculative": false, "type": "edge", "timestamp": 416865428306}
+{"vertex": 237, "type": "vertex_ctor", "timestamp": 416865433406}
+{"vertex": 234, "type": "vertex_dtor", "timestamp": 416865445088}
+{"pre": 232, "post": 236, "speculative": false, "type": "edge", "timestamp": 416865447873}
+{"vertex": 235, "type": "vertex_dtor", "timestamp": 416865449205}
+{"vertex": 238, "type": "vertex_ctor", "timestamp": 416865461480}
+{"vertex": 231, "type": "vertex_dtor", "timestamp": 416865463713}
+{"vertex": 236, "type": "vertex_dtor", "timestamp": 416865472821}
+{"pre": 237, "post": 238, "speculative": true, "type": "edge", "timestamp": 416865478782}
+{"pre": 69, "post": 71, "speculative": false, "type": "edge", "timestamp": 416865481667}
+{"vertex": 232, "type": "vertex_dtor", "timestamp": 416865485315}
+{"vertex": 71, "type": "vertex_dtor", "timestamp": 416865498690}
+{"pre": 237, "post": 238, "speculative": false, "type": "edge", "timestamp": 416865501104}
+{"pre": 117, "post": 118, "speculative": false, "type": "edge", "timestamp": 416865502998}
+{"vertex": 69, "type": "vertex_dtor", "timestamp": 416865511194}
+{"vertex": 238, "type": "vertex_dtor", "timestamp": 416865517897}
+{"vertex": 118, "type": "vertex_dtor", "timestamp": 416865519981}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865529068}
+{"vertex": 237, "type": "vertex_dtor", "timestamp": 416865530431}
+{"vertex": 117, "type": "vertex_dtor", "timestamp": 416865532384}
+{"pre": 7, "post": 165, "speculative": false, "type": "edge", "timestamp": 416865557111}
+{"pre": 7, "post": 180, "speculative": false, "type": "edge", "timestamp": 416865558625}
+{"pre": 7, "post": 125, "speculative": false, "type": "edge", "timestamp": 416865560598}
+{"sem": 4, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416865574115}
+{"sem": 17, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416865575827}
+{"sem": 13, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416865578072}
+{"vertex": 165, "type": "vertex_dtor", "timestamp": 416865587500}
+{"vertex": 180, "type": "vertex_dtor", "timestamp": 416865589373}
+{"vertex": 125, "type": "vertex_dtor", "timestamp": 416865591677}
+{"vertex": 164, "type": "vertex_dtor", "timestamp": 416865600174}
+{"vertex": 179, "type": "vertex_dtor", "timestamp": 416865602198}
+{"vertex": 124, "type": "vertex_dtor", "timestamp": 416865604332}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865614651}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865617166}
+{"vertex": 154, "type": "vertex_dtor", "timestamp": 416865625272}
+{"pre": 115, "post": 116, "speculative": false, "type": "edge", "timestamp": 416865643587}
+{"pre": 36, "post": 37, "speculative": false, "type": "edge", "timestamp": 416865658004}
+{"vertex": 116, "type": "vertex_dtor", "timestamp": 416865660589}
+{"pre": 112, "post": 113, "speculative": false, "type": "edge", "timestamp": 416865666320}
+{"vertex": 115, "type": "vertex_dtor", "timestamp": 416865673533}
+{"vertex": 239, "type": "vertex_ctor", "timestamp": 416865684214}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865693151}
+{"pre": 112, "post": 239, "speculative": true, "type": "edge", "timestamp": 416865701367}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865708541}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865723569}
+{"vertex": 240, "type": "vertex_ctor", "timestamp": 416865734550}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865738298}
+{"pre": 239, "post": 20, "speculative": false, "type": "edge", "timestamp": 416865748768}
+{"pre": 36, "post": 240, "speculative": true, "type": "edge", "timestamp": 416865751793}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865752956}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865767604}
+{"vertex": 241, "type": "vertex_ctor", "timestamp": 416865767974}
+{"vertex": 240, "type": "vertex_dtor", "timestamp": 416865769117}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865782091}
+{"pre": 239, "post": 241, "speculative": true, "type": "edge", "timestamp": 416865785147}
+{"vertex": 242, "type": "vertex_ctor", "timestamp": 416865798743}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865799514}
+{"pre": 239, "post": 241, "speculative": false, "type": "edge", "timestamp": 416865807339}
+{"vertex": 243, "type": "vertex_ctor", "timestamp": 416865811407}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865814353}
+{"vertex": 241, "type": "vertex_dtor", "timestamp": 416865824081}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865828861}
+{"vertex": 239, "type": "vertex_dtor", "timestamp": 416865836635}
+{"pre": 36, "post": 243, "speculative": true, "type": "edge", "timestamp": 416865837847}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865843468}
+{"pre": 112, "post": 113, "speculative": false, "type": "edge", "timestamp": 416865854339}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865858036}
+{"vertex": 244, "type": "vertex_ctor", "timestamp": 416865868165}
+{"vertex": 113, "type": "vertex_dtor", "timestamp": 416865871702}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865872673}
+{"vertex": 112, "type": "vertex_dtor", "timestamp": 416865884387}
+{"pre": 243, "post": 244, "speculative": false, "type": "edge", "timestamp": 416865893974}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865894305}
+{"pre": 7, "post": 129, "speculative": false, "type": "edge", "timestamp": 416865904605}
+{"vertex": 245, "type": "vertex_ctor", "timestamp": 416865920095}
+{"sem": 11, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416865921157}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865925494}
+{"vertex": 129, "type": "vertex_dtor", "timestamp": 416865934552}
+{"pre": 36, "post": 245, "speculative": true, "type": "edge", "timestamp": 416865943700}
+{"vertex": 128, "type": "vertex_dtor", "timestamp": 416865947396}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865965041}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416865965562}
+{"sem": 3, "pre": 36, "post": 245, "count": 1, "type": "sem_wait", "timestamp": 416865980600}
+{"vertex": 205, "type": "vertex_dtor", "timestamp": 416865985980}
+{"pre": 172, "post": 173, "speculative": false, "type": "edge", "timestamp": 416866004135}
+{"sem": 3, "post": 245, "type": "sem_wait_completed", "timestamp": 416866014515}
+{"vertex": 173, "type": "vertex_dtor", "timestamp": 416866021198}
+{"vertex": 246, "type": "vertex_ctor", "timestamp": 416866031257}
+{"vertex": 172, "type": "vertex_dtor", "timestamp": 416866034273}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866049482}
+{"pre": 245, "post": 246, "speculative": false, "type": "edge", "timestamp": 416866053399}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866065252}
+{"vertex": 245, "type": "vertex_dtor", "timestamp": 416866070662}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866080070}
+{"vertex": 247, "type": "vertex_ctor", "timestamp": 416866083036}
+{"vertex": 247, "type": "vertex_dtor", "timestamp": 416866095970}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866097252}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866112041}
+{"vertex": 248, "type": "vertex_ctor", "timestamp": 416866126248}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866126689}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866141327}
+{"pre": 246, "post": 248, "speculative": true, "type": "edge", "timestamp": 416866143681}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866155994}
+{"pre": 246, "post": 248, "speculative": false, "type": "edge", "timestamp": 416866169020}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866170673}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866185340}
+{"vertex": 246, "type": "vertex_dtor", "timestamp": 416866191483}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866200069}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866214737}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866229455}
+{"vertex": 249, "type": "vertex_ctor", "timestamp": 416866230126}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866252429}
+{"pre": 248, "post": 249, "speculative": false, "type": "edge", "timestamp": 416866267177}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866289720}
+{"vertex": 248, "type": "vertex_dtor", "timestamp": 416866307584}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866318965}
+{"vertex": 250, "type": "vertex_ctor", "timestamp": 416866320007}
+{"vertex": 249, "type": "vertex_dtor", "timestamp": 416866337692}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416866342601}
+{"vertex": 251, "type": "vertex_ctor", "timestamp": 416866350345}
+{"pre": 250, "post": 251, "speculative": true, "type": "edge", "timestamp": 416866367849}
+{"pre": 250, "post": 251, "speculative": false, "type": "edge", "timestamp": 416866390422}
+{"vertex": 251, "type": "vertex_dtor", "timestamp": 416866407124}
+{"vertex": 250, "type": "vertex_dtor", "timestamp": 416866419969}
+{"vertex": 252, "type": "vertex_ctor", "timestamp": 416866433183}
+{"vertex": 253, "type": "vertex_ctor", "timestamp": 416866445988}
+{"pre": 36, "post": 253, "speculative": true, "type": "edge", "timestamp": 416866463672}
+{"vertex": 254, "type": "vertex_ctor", "timestamp": 416866481296}
+{"pre": 244, "post": 254, "speculative": false, "type": "edge", "timestamp": 416866498539}
+{"vertex": 244, "type": "vertex_dtor", "timestamp": 416866514750}
+{"vertex": 255, "type": "vertex_ctor", "timestamp": 416866526963}
+{"vertex": 255, "type": "vertex_dtor", "timestamp": 416866541821}
+{"vertex": 256, "type": "vertex_ctor", "timestamp": 416866572349}
+{"vertex": 257, "type": "vertex_ctor", "timestamp": 416866584984}
+{"pre": 36, "post": 257, "speculative": true, "type": "edge", "timestamp": 416866602467}
+{"vertex": 258, "type": "vertex_ctor", "timestamp": 416866619490}
+{"pre": 257, "post": 258, "speculative": false, "type": "edge", "timestamp": 416866637092}
+{"vertex": 259, "type": "vertex_ctor", "timestamp": 416866654476}
+{"pre": 36, "post": 259, "speculative": true, "type": "edge", "timestamp": 416866671649}
+{"sem": 4, "pre": 36, "post": 259, "count": 1, "type": "sem_wait", "timestamp": 416866692919}
+{"sem": 4, "post": 259, "type": "sem_wait_completed", "timestamp": 416866710303}
+{"vertex": 260, "type": "vertex_ctor", "timestamp": 416866723839}
+{"pre": 259, "post": 260, "speculative": false, "type": "edge", "timestamp": 416866741051}
+{"vertex": 259, "type": "vertex_dtor", "timestamp": 416866757323}
+{"vertex": 261, "type": "vertex_ctor", "timestamp": 416866769396}
+{"vertex": 261, "type": "vertex_dtor", "timestamp": 416866782030}
+{"vertex": 262, "type": "vertex_ctor", "timestamp": 416866813320}
+{"pre": 260, "post": 262, "speculative": true, "type": "edge", "timestamp": 416866830542}
+{"pre": 260, "post": 262, "speculative": false, "type": "edge", "timestamp": 416866852775}
+{"vertex": 260, "type": "vertex_dtor", "timestamp": 416866869457}
+{"vertex": 263, "type": "vertex_ctor", "timestamp": 416866899674}
+{"pre": 262, "post": 263, "speculative": false, "type": "edge", "timestamp": 416866916837}
+{"vertex": 262, "type": "vertex_dtor", "timestamp": 416866933088}
+{"vertex": 264, "type": "vertex_ctor", "timestamp": 416866945211}
+{"vertex": 263, "type": "vertex_dtor", "timestamp": 416866958377}
+{"vertex": 265, "type": "vertex_ctor", "timestamp": 416866970549}
+{"pre": 264, "post": 265, "speculative": true, "type": "edge", "timestamp": 416866987672}
+{"pre": 264, "post": 265, "speculative": false, "type": "edge", "timestamp": 416867009795}
+{"vertex": 265, "type": "vertex_dtor", "timestamp": 416867027458}
+{"vertex": 264, "type": "vertex_dtor", "timestamp": 416867040113}
+{"vertex": 266, "type": "vertex_ctor", "timestamp": 416867053478}
+{"pre": 258, "post": 266, "speculative": false, "type": "edge", "timestamp": 416867070651}
+{"vertex": 258, "type": "vertex_dtor", "timestamp": 416867086971}
+{"vertex": 267, "type": "vertex_ctor", "timestamp": 416867099105}
+{"vertex": 268, "type": "vertex_ctor", "timestamp": 416867111999}
+{"pre": 254, "post": 268, "speculative": false, "type": "edge", "timestamp": 416867129272}
+{"vertex": 254, "type": "vertex_dtor", "timestamp": 416867145613}
+{"vertex": 269, "type": "vertex_ctor", "timestamp": 416867157777}
+{"vertex": 269, "type": "vertex_dtor", "timestamp": 416867170381}
+{"vertex": 267, "type": "vertex_dtor", "timestamp": 416867183135}
+{"vertex": 270, "type": "vertex_ctor", "timestamp": 416867195558}
+{"pre": 253, "post": 270, "speculative": false, "type": "edge", "timestamp": 416867213213}
+{"pre": 266, "post": 252, "speculative": false, "type": "edge", "timestamp": 416867235315}
+{"vertex": 266, "type": "vertex_dtor", "timestamp": 416867252057}
+{"vertex": 271, "type": "vertex_ctor", "timestamp": 416867265663}
+{"pre": 36, "post": 271, "speculative": true, "type": "edge", "timestamp": 416867294267}
+{"vertex": 272, "type": "vertex_ctor", "timestamp": 416867315046}
+{"pre": 36, "post": 272, "speculative": true, "type": "edge", "timestamp": 416867332751}
+{"vertex": 273, "type": "vertex_ctor", "timestamp": 416867349753}
+{"vertex": 274, "type": "vertex_ctor", "timestamp": 416867362588}
+{"pre": 272, "post": 274, "speculative": false, "type": "edge", "timestamp": 416867379791}
+{"vertex": 272, "type": "vertex_dtor", "timestamp": 416867396111}
+{"vertex": 275, "type": "vertex_ctor", "timestamp": 416867408285}
+{"pre": 270, "post": 273, "speculative": false, "type": "edge", "timestamp": 416867426219}
+{"vertex": 275, "type": "vertex_dtor", "timestamp": 416867442941}
+{"pre": 270, "post": 271, "speculative": false, "type": "edge", "timestamp": 416867460705}
+{"vertex": 270, "type": "vertex_dtor", "timestamp": 416867477356}
+{"vertex": 274, "type": "vertex_dtor", "timestamp": 416867490071}
+{"vertex": 276, "type": "vertex_ctor", "timestamp": 416867502645}
+{"pre": 37, "post": 276, "speculative": false, "type": "edge", "timestamp": 416867519888}
+{"vertex": 37, "type": "vertex_dtor", "timestamp": 416867536128}
+{"vertex": 277, "type": "vertex_ctor", "timestamp": 416867548252}
+{"vertex": 271, "type": "vertex_dtor", "timestamp": 416867562189}
+{"vertex": 277, "type": "vertex_dtor", "timestamp": 416867574673}
+{"vertex": 36, "type": "vertex_dtor", "timestamp": 416867587136}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867621502}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867637522}
+{"vertex": 189, "type": "vertex_dtor", "timestamp": 416867644055}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867655858}
+{"pre": 156, "post": 158, "speculative": false, "type": "edge", "timestamp": 416867662581}
+{"vertex": 278, "type": "vertex_ctor", "timestamp": 416867678210}
+{"vertex": 158, "type": "vertex_dtor", "timestamp": 416867679622}
+{"vertex": 156, "type": "vertex_dtor", "timestamp": 416867692498}
+{"pre": 242, "post": 278, "speculative": true, "type": "edge", "timestamp": 416867696225}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867707936}
+{"vertex": 279, "type": "vertex_ctor", "timestamp": 416867713147}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867723777}
+{"vertex": 280, "type": "vertex_ctor", "timestamp": 416867731271}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867738625}
+{"pre": 256, "post": 279, "speculative": true, "type": "edge", "timestamp": 416867738935}
+{"pre": 278, "post": 280, "speculative": false, "type": "edge", "timestamp": 416867748494}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867753303}
+{"vertex": 278, "type": "vertex_dtor", "timestamp": 416867765085}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867768061}
+{"vertex": 281, "type": "vertex_ctor", "timestamp": 416867777340}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867782759}
+{"vertex": 282, "type": "vertex_ctor", "timestamp": 416867789432}
+{"vertex": 280, "type": "vertex_dtor", "timestamp": 416867790564}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867797368}
+{"vertex": 283, "type": "vertex_ctor", "timestamp": 416867802788}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867812035}
+{"pre": 279, "post": 282, "speculative": false, "type": "edge", "timestamp": 416867814290}
+{"pre": 281, "post": 283, "speculative": true, "type": "edge", "timestamp": 416867820041}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867826734}
+{"vertex": 279, "type": "vertex_dtor", "timestamp": 416867837825}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867841391}
+{"pre": 281, "post": 283, "speculative": false, "type": "edge", "timestamp": 416867845990}
+{"vertex": 284, "type": "vertex_ctor", "timestamp": 416867854998}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867856060}
+{"vertex": 283, "type": "vertex_dtor", "timestamp": 416867862852}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867870727}
+{"vertex": 282, "type": "vertex_dtor", "timestamp": 416867874114}
+{"vertex": 281, "type": "vertex_dtor", "timestamp": 416867875376}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867885356}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867892419}
+{"vertex": 285, "type": "vertex_ctor", "timestamp": 416867895695}
+{"pre": 7, "post": 243, "speculative": false, "type": "edge", "timestamp": 416867905844}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867908229}
+{"pre": 284, "post": 285, "speculative": true, "type": "edge", "timestamp": 416867921003}
+{"sem": 3, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416867922426}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867922987}
+{"vertex": 243, "type": "vertex_dtor", "timestamp": 416867935971}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867937695}
+{"vertex": 242, "type": "vertex_dtor", "timestamp": 416867949007}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867952393}
+{"pre": 284, "post": 285, "speculative": false, "type": "edge", "timestamp": 416867953505}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867967032}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867972011}
+{"vertex": 285, "type": "vertex_dtor", "timestamp": 416867977171}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867981669}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867986899}
+{"vertex": 284, "type": "vertex_dtor", "timestamp": 416867994615}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416867996247}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868001758}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868010835}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868018990}
+{"pre": 7, "post": 257, "speculative": false, "type": "edge", "timestamp": 416868022306}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868025453}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868040061}
+{"sem": 4, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416868041243}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868041363}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868054679}
+{"vertex": 257, "type": "vertex_dtor", "timestamp": 416868054729}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868062553}
+{"vertex": 256, "type": "vertex_dtor", "timestamp": 416868067523}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868069316}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868080979}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868083183}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868083925}
+{"vertex": 268, "type": "vertex_dtor", "timestamp": 416868098252}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868098542}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868104203}
+{"pre": 252, "post": 253, "speculative": false, "type": "edge", "timestamp": 416868119613}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868127377}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868130052}
+{"vertex": 253, "type": "vertex_dtor", "timestamp": 416868137136}
+{"vertex": 252, "type": "vertex_dtor", "timestamp": 416868149850}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868160300}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868180970}
+{"pre": 273, "post": 276, "speculative": false, "type": "edge", "timestamp": 416868185327}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868201790}
+{"pre": 273, "post": 276, "speculative": false, "type": "edge", "timestamp": 416868210315}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868222610}
+{"vertex": 276, "type": "vertex_dtor", "timestamp": 416868227508}
+{"vertex": 273, "type": "vertex_dtor", "timestamp": 416868240042}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868255031}
+{"pre": 41, "post": 42, "speculative": false, "type": "edge", "timestamp": 416868290639}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868300938}
+{"vertex": 286, "type": "vertex_ctor", "timestamp": 416868312381}
+{"pre": 41, "post": 286, "speculative": true, "type": "edge", "timestamp": 416868333129}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416868343240}
+{"sem": 287, "count": 6, "type": "sem_ctor", "timestamp": 416868368578}
+{"vertex": 288, "type": "vertex_ctor", "timestamp": 416868397523}
+{"sem": 289, "count": 6, "type": "sem_ctor", "timestamp": 416868409045}
+{"vertex": 290, "type": "vertex_ctor", "timestamp": 416868420777}
+{"pre": 41, "post": 290, "speculative": true, "type": "edge", "timestamp": 416868437970}
+{"vertex": 291, "type": "vertex_ctor", "timestamp": 416868499727}
+{"pre": 41, "post": 291, "speculative": true, "type": "edge", "timestamp": 416868519696}
+{"sem": 289, "pre": 41, "post": 291, "count": 3, "type": "sem_wait", "timestamp": 416868559152}
+{"sem": 289, "post": 291, "type": "sem_wait_completed", "timestamp": 416868584119}
+{"vertex": 292, "type": "vertex_ctor", "timestamp": 416868602524}
+{"pre": 291, "post": 292, "speculative": false, "type": "edge", "timestamp": 416868627222}
+{"vertex": 291, "type": "vertex_dtor", "timestamp": 416868654684}
+{"vertex": 293, "type": "vertex_ctor", "timestamp": 416868668700}
+{"vertex": 293, "type": "vertex_dtor", "timestamp": 416868680994}
+{"vertex": 294, "type": "vertex_ctor", "timestamp": 416868721070}
+{"pre": 292, "post": 294, "speculative": true, "type": "edge", "timestamp": 416868745497}
+{"vertex": 295, "type": "vertex_ctor", "timestamp": 416868773230}
+{"pre": 294, "post": 295, "speculative": false, "type": "edge", "timestamp": 416868799370}
+{"vertex": 296, "type": "vertex_ctor", "timestamp": 416868825440}
+{"pre": 292, "post": 296, "speculative": true, "type": "edge", "timestamp": 416868851389}
+{"vertex": 297, "type": "vertex_ctor", "timestamp": 416868874664}
+{"pre": 292, "post": 297, "speculative": true, "type": "edge", "timestamp": 416868892096}
+{"vertex": 298, "type": "vertex_ctor", "timestamp": 416868908518}
+{"vertex": 299, "type": "vertex_ctor", "timestamp": 416868921673}
+{"pre": 297, "post": 299, "speculative": false, "type": "edge", "timestamp": 416868938946}
+{"vertex": 297, "type": "vertex_dtor", "timestamp": 416868955388}
+{"vertex": 300, "type": "vertex_ctor", "timestamp": 416868967561}
+{"pre": 295, "post": 298, "speculative": false, "type": "edge", "timestamp": 416868985034}
+{"vertex": 300, "type": "vertex_dtor", "timestamp": 416869004241}
+{"pre": 295, "post": 296, "speculative": false, "type": "edge", "timestamp": 416869021634}
+{"vertex": 295, "type": "vertex_dtor", "timestamp": 416869038055}
+{"vertex": 301, "type": "vertex_ctor", "timestamp": 416869050459}
+{"pre": 292, "post": 301, "speculative": true, "type": "edge", "timestamp": 416869067683}
+{"vertex": 302, "type": "vertex_ctor", "timestamp": 416869084003}
+{"pre": 292, "post": 302, "speculative": true, "type": "edge", "timestamp": 416869101216}
+{"vertex": 303, "type": "vertex_ctor", "timestamp": 416869117587}
+{"vertex": 304, "type": "vertex_ctor", "timestamp": 416869130242}
+{"pre": 302, "post": 304, "speculative": false, "type": "edge", "timestamp": 416869147454}
+{"vertex": 302, "type": "vertex_dtor", "timestamp": 416869163766}
+{"vertex": 305, "type": "vertex_ctor", "timestamp": 416869175868}
+{"pre": 296, "post": 303, "speculative": false, "type": "edge", "timestamp": 416869193312}
+{"vertex": 305, "type": "vertex_dtor", "timestamp": 416869210224}
+{"pre": 296, "post": 301, "speculative": false, "type": "edge", "timestamp": 416869227457}
+{"vertex": 296, "type": "vertex_dtor", "timestamp": 416869245001}
+{"pre": 292, "post": 301, "speculative": false, "type": "edge", "timestamp": 416869262363}
+{"vertex": 292, "type": "vertex_dtor", "timestamp": 416869291068}
+{"vertex": 306, "type": "vertex_ctor", "timestamp": 416869306387}
+{"pre": 290, "post": 306, "speculative": false, "type": "edge", "timestamp": 416869323601}
+{"pre": 301, "post": 288, "speculative": false, "type": "edge", "timestamp": 416869345001}
+{"vertex": 307, "type": "vertex_ctor", "timestamp": 416869361372}
+{"pre": 306, "post": 307, "speculative": false, "type": "edge", "timestamp": 416869378496}
+{"vertex": 306, "type": "vertex_dtor", "timestamp": 416869394716}
+{"vertex": 308, "type": "vertex_ctor", "timestamp": 416869406770}
+{"vertex": 308, "type": "vertex_dtor", "timestamp": 416869418832}
+{"vertex": 301, "type": "vertex_dtor", "timestamp": 416869431005}
+{"sem": 287, "type": "sem_dtor", "timestamp": 416869442527}
+{"vertex": 309, "type": "vertex_ctor", "timestamp": 416869455251}
+{"pre": 41, "post": 309, "speculative": true, "type": "edge", "timestamp": 416869472565}
+{"vertex": 310, "type": "vertex_ctor", "timestamp": 416869489607}
+{"pre": 41, "post": 310, "speculative": true, "type": "edge", "timestamp": 416869507061}
+{"vertex": 311, "type": "vertex_ctor", "timestamp": 416869525766}
+{"vertex": 312, "type": "vertex_ctor", "timestamp": 416869538550}
+{"pre": 310, "post": 312, "speculative": false, "type": "edge", "timestamp": 416869555473}
+{"vertex": 310, "type": "vertex_dtor", "timestamp": 416869571764}
+{"vertex": 313, "type": "vertex_ctor", "timestamp": 416869583867}
+{"pre": 307, "post": 311, "speculative": false, "type": "edge", "timestamp": 416869601661}
+{"vertex": 313, "type": "vertex_dtor", "timestamp": 416869618393}
+{"pre": 307, "post": 309, "speculative": false, "type": "edge", "timestamp": 416869636257}
+{"vertex": 307, "type": "vertex_dtor", "timestamp": 416869652969}
+{"vertex": 314, "type": "vertex_ctor", "timestamp": 416869665493}
+{"pre": 41, "post": 314, "speculative": true, "type": "edge", "timestamp": 416869682555}
+{"vertex": 315, "type": "vertex_ctor", "timestamp": 416869699257}
+{"pre": 41, "post": 315, "speculative": true, "type": "edge", "timestamp": 416869716571}
+{"vertex": 316, "type": "vertex_ctor", "timestamp": 416869733292}
+{"vertex": 317, "type": "vertex_ctor", "timestamp": 416869745927}
+{"pre": 315, "post": 317, "speculative": false, "type": "edge", "timestamp": 416869774281}
+{"vertex": 315, "type": "vertex_dtor", "timestamp": 416869790982}
+{"vertex": 318, "type": "vertex_ctor", "timestamp": 416869803036}
+{"pre": 309, "post": 316, "speculative": false, "type": "edge", "timestamp": 416869820909}
+{"vertex": 318, "type": "vertex_dtor", "timestamp": 416869837802}
+{"pre": 309, "post": 314, "speculative": false, "type": "edge", "timestamp": 416869855445}
+{"vertex": 319, "type": "vertex_ctor", "timestamp": 416869872348}
+{"pre": 41, "post": 319, "speculative": true, "type": "edge", "timestamp": 416869889411}
+{"vertex": 320, "type": "vertex_ctor", "timestamp": 416869905922}
+{"pre": 41, "post": 320, "speculative": true, "type": "edge", "timestamp": 416869923185}
+{"vertex": 321, "type": "vertex_ctor", "timestamp": 416869939906}
+{"vertex": 322, "type": "vertex_ctor", "timestamp": 416869952591}
+{"pre": 320, "post": 322, "speculative": false, "type": "edge", "timestamp": 416869969614}
+{"vertex": 320, "type": "vertex_dtor", "timestamp": 416869985824}
+{"vertex": 323, "type": "vertex_ctor", "timestamp": 416869997928}
+{"pre": 314, "post": 321, "speculative": false, "type": "edge", "timestamp": 416870016863}
+{"vertex": 323, "type": "vertex_dtor", "timestamp": 416870033586}
+{"pre": 314, "post": 319, "speculative": false, "type": "edge", "timestamp": 416870051259}
+{"vertex": 324, "type": "vertex_ctor", "timestamp": 416870067680}
+{"pre": 41, "post": 324, "speculative": true, "type": "edge", "timestamp": 416870084704}
+{"vertex": 325, "type": "vertex_ctor", "timestamp": 416870101275}
+{"pre": 41, "post": 325, "speculative": true, "type": "edge", "timestamp": 416870118538}
+{"vertex": 326, "type": "vertex_ctor", "timestamp": 416870135199}
+{"vertex": 327, "type": "vertex_ctor", "timestamp": 416870147814}
+{"pre": 325, "post": 327, "speculative": false, "type": "edge", "timestamp": 416870164825}
+{"vertex": 325, "type": "vertex_dtor", "timestamp": 416870181007}
+{"vertex": 328, "type": "vertex_ctor", "timestamp": 416870193130}
+{"pre": 319, "post": 326, "speculative": false, "type": "edge", "timestamp": 416870210804}
+{"vertex": 328, "type": "vertex_dtor", "timestamp": 416870227686}
+{"pre": 319, "post": 324, "speculative": false, "type": "edge", "timestamp": 416870245229}
+{"vertex": 324, "type": "vertex_dtor", "timestamp": 416870262943}
+{"vertex": 319, "type": "vertex_dtor", "timestamp": 416870285006}
+{"vertex": 314, "type": "vertex_dtor", "timestamp": 416870299523}
+{"vertex": 309, "type": "vertex_dtor", "timestamp": 416870312017}
+{"pre": 41, "post": 42, "speculative": false, "type": "edge", "timestamp": 416870329760}
+{"vertex": 42, "type": "vertex_dtor", "timestamp": 416870348467}
+{"vertex": 41, "type": "vertex_dtor", "timestamp": 416870361150}
+{"pre": 7, "post": 294, "speculative": false, "type": "edge", "timestamp": 416870388432}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416870412809}
+{"pre": 46, "post": 47, "speculative": false, "type": "edge", "timestamp": 416870462654}
+{"vertex": 329, "type": "vertex_ctor", "timestamp": 416870486370}
+{"pre": 46, "post": 329, "speculative": true, "type": "edge", "timestamp": 416870503682}
+{"vertex": 329, "type": "vertex_dtor", "timestamp": 416870520665}
+{"pre": 46, "post": 47, "speculative": false, "type": "edge", "timestamp": 416870538119}
+{"vertex": 47, "type": "vertex_dtor", "timestamp": 416870556604}
+{"vertex": 46, "type": "vertex_dtor", "timestamp": 416870569108}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416870591220}
+{"pre": 298, "post": 299, "speculative": false, "type": "edge", "timestamp": 416870632679}
+{"vertex": 294, "type": "vertex_dtor", "timestamp": 416870649852}
+{"pre": 298, "post": 299, "speculative": false, "type": "edge", "timestamp": 416870667104}
+{"vertex": 299, "type": "vertex_dtor", "timestamp": 416870684077}
+{"vertex": 298, "type": "vertex_dtor", "timestamp": 416870696160}
+{"pre": 303, "post": 304, "speculative": false, "type": "edge", "timestamp": 416870730295}
+{"vertex": 330, "type": "vertex_ctor", "timestamp": 416870746807}
+{"pre": 303, "post": 330, "speculative": true, "type": "edge", "timestamp": 416870763960}
+{"sem": 289, "pre": 303, "post": 330, "count": 3, "type": "sem_wait", "timestamp": 416870786051}
+{"sem": 289, "post": 330, "type": "sem_wait_completed", "timestamp": 416870803164}
+{"vertex": 331, "type": "vertex_ctor", "timestamp": 416870816200}
+{"pre": 330, "post": 331, "speculative": false, "type": "edge", "timestamp": 416870833362}
+{"vertex": 330, "type": "vertex_dtor", "timestamp": 416870849493}
+{"vertex": 332, "type": "vertex_ctor", "timestamp": 416870861596}
+{"vertex": 332, "type": "vertex_dtor", "timestamp": 416870873659}
+{"sem": 289, "vertex": 331, "count": 6, "type": "sem_signal", "timestamp": 416870910770}
+{"vertex": 333, "type": "vertex_ctor", "timestamp": 416870924005}
+{"pre": 331, "post": 333, "speculative": true, "type": "edge", "timestamp": 416870947700}
+{"pre": 331, "post": 333, "speculative": false, "type": "edge", "timestamp": 416870989861}
+{"vertex": 331, "type": "vertex_dtor", "timestamp": 416871015440}
+{"pre": 333, "post": 304, "speculative": false, "type": "edge", "timestamp": 416871037471}
+{"vertex": 333, "type": "vertex_dtor", "timestamp": 416871054675}
+{"vertex": 304, "type": "vertex_dtor", "timestamp": 416871067568}
+{"vertex": 303, "type": "vertex_dtor", "timestamp": 416871079783}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416871099831}
+{"vertex": 290, "type": "vertex_dtor", "timestamp": 416871118115}
+{"sem": 289, "type": "sem_dtor", "timestamp": 416871129988}
+{"vertex": 288, "type": "vertex_dtor", "timestamp": 416871141701}
+{"pre": 311, "post": 312, "speculative": false, "type": "edge", "timestamp": 416871177158}
+{"pre": 311, "post": 312, "speculative": false, "type": "edge", "timestamp": 416871199260}
+{"vertex": 312, "type": "vertex_dtor", "timestamp": 416871216573}
+{"vertex": 311, "type": "vertex_dtor", "timestamp": 416871229087}
+{"pre": 316, "post": 317, "speculative": false, "type": "edge", "timestamp": 416871264054}
+{"vertex": 334, "type": "vertex_ctor", "timestamp": 416871291496}
+{"pre": 316, "post": 334, "speculative": true, "type": "edge", "timestamp": 416871311013}
+{"pre": 316, "post": 286, "speculative": false, "type": "edge", "timestamp": 416871334759}
+{"vertex": 335, "type": "vertex_ctor", "timestamp": 416871354256}
+{"pre": 334, "post": 335, "speculative": false, "type": "edge", "timestamp": 416871371408}
+{"vertex": 334, "type": "vertex_dtor", "timestamp": 416871387610}
+{"vertex": 336, "type": "vertex_ctor", "timestamp": 416871399733}
+{"vertex": 336, "type": "vertex_dtor", "timestamp": 416871412478}
+{"pre": 335, "post": 317, "speculative": false, "type": "edge", "timestamp": 416871430261}
+{"vertex": 335, "type": "vertex_dtor", "timestamp": 416871447414}
+{"vertex": 317, "type": "vertex_dtor", "timestamp": 416871467913}
+{"vertex": 316, "type": "vertex_dtor", "timestamp": 416871480527}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416871497249}
+{"pre": 321, "post": 322, "speculative": false, "type": "edge", "timestamp": 416871539529}
+{"sem": 5, "vertex": 321, "count": 0, "type": "sem_signal", "timestamp": 416871722249}
+{"vertex": 337, "type": "vertex_ctor", "timestamp": 416871757666}
+{"pre": 286, "post": 337, "speculative": false, "type": "edge", "timestamp": 416871775419}
+{"vertex": 337, "type": "vertex_dtor", "timestamp": 416871800547}
+{"vertex": 338, "type": "vertex_ctor", "timestamp": 416871812891}
+{"pre": 321, "post": 338, "speculative": true, "type": "edge", "timestamp": 416871830034}
+{"sem": 339, "count": 0, "type": "sem_ctor", "timestamp": 416871863979}
+{"vertex": 340, "type": "vertex_ctor", "timestamp": 416871894197}
+{"sem": 341, "count": 0, "type": "sem_ctor", "timestamp": 416871906220}
+{"vertex": 342, "type": "vertex_ctor", "timestamp": 416871918243}
+{"pre": 338, "post": 342, "speculative": true, "type": "edge", "timestamp": 416871935746}
+{"vertex": 343, "type": "vertex_ctor", "timestamp": 416871997794}
+{"pre": 338, "post": 343, "speculative": true, "type": "edge", "timestamp": 416872015137}
+{"vertex": 343, "type": "vertex_dtor", "timestamp": 416872032290}
+{"vertex": 344, "type": "vertex_ctor", "timestamp": 416872062078}
+{"vertex": 345, "type": "vertex_ctor", "timestamp": 416872074761}
+{"pre": 338, "post": 345, "speculative": true, "type": "edge", "timestamp": 416872092275}
+{"vertex": 346, "type": "vertex_ctor", "timestamp": 416872110008}
+{"pre": 345, "post": 346, "speculative": false, "type": "edge", "timestamp": 416872127542}
+{"vertex": 347, "type": "vertex_ctor", "timestamp": 416872145176}
+{"pre": 338, "post": 347, "speculative": true, "type": "edge", "timestamp": 416872162258}
+{"sem": 3, "pre": 338, "post": 347, "count": 1, "type": "sem_wait", "timestamp": 416872183629}
+{"sem": 3, "post": 347, "type": "sem_wait_completed", "timestamp": 416872201163}
+{"vertex": 348, "type": "vertex_ctor", "timestamp": 416872214738}
+{"pre": 347, "post": 348, "speculative": false, "type": "edge", "timestamp": 416872231811}
+{"vertex": 347, "type": "vertex_dtor", "timestamp": 416872248202}
+{"vertex": 349, "type": "vertex_ctor", "timestamp": 416872260306}
+{"vertex": 349, "type": "vertex_dtor", "timestamp": 416872284090}
+{"vertex": 350, "type": "vertex_ctor", "timestamp": 416872316523}
+{"pre": 348, "post": 350, "speculative": true, "type": "edge", "timestamp": 416872333916}
+{"pre": 348, "post": 350, "speculative": false, "type": "edge", "timestamp": 416872356439}
+{"vertex": 348, "type": "vertex_dtor", "timestamp": 416872373231}
+{"vertex": 351, "type": "vertex_ctor", "timestamp": 416872403779}
+{"pre": 350, "post": 351, "speculative": false, "type": "edge", "timestamp": 416872421102}
+{"vertex": 350, "type": "vertex_dtor", "timestamp": 416872437644}
+{"vertex": 352, "type": "vertex_ctor", "timestamp": 416872449827}
+{"vertex": 351, "type": "vertex_dtor", "timestamp": 416872463343}
+{"vertex": 353, "type": "vertex_ctor", "timestamp": 416872475616}
+{"pre": 352, "post": 353, "speculative": true, "type": "edge", "timestamp": 416872492889}
+{"pre": 352, "post": 353, "speculative": false, "type": "edge", "timestamp": 416872515012}
+{"vertex": 353, "type": "vertex_dtor", "timestamp": 416872533597}
+{"vertex": 352, "type": "vertex_dtor", "timestamp": 416872546282}
+{"vertex": 354, "type": "vertex_ctor", "timestamp": 416872559226}
+{"vertex": 355, "type": "vertex_ctor", "timestamp": 416872571991}
+{"pre": 338, "post": 355, "speculative": true, "type": "edge", "timestamp": 416872589473}
+{"vertex": 356, "type": "vertex_ctor", "timestamp": 416872607017}
+{"pre": 346, "post": 356, "speculative": false, "type": "edge", "timestamp": 416872624240}
+{"vertex": 346, "type": "vertex_dtor", "timestamp": 416872640601}
+{"vertex": 357, "type": "vertex_ctor", "timestamp": 416872652715}
+{"vertex": 357, "type": "vertex_dtor", "timestamp": 416872665649}
+{"vertex": 358, "type": "vertex_ctor", "timestamp": 416872695355}
+{"vertex": 359, "type": "vertex_ctor", "timestamp": 416872708010}
+{"pre": 338, "post": 359, "speculative": true, "type": "edge", "timestamp": 416872725633}
+{"vertex": 360, "type": "vertex_ctor", "timestamp": 416872742716}
+{"pre": 359, "post": 360, "speculative": false, "type": "edge", "timestamp": 416872760319}
+{"vertex": 361, "type": "vertex_ctor", "timestamp": 416872777543}
+{"pre": 338, "post": 361, "speculative": true, "type": "edge", "timestamp": 416872796058}
+{"sem": 4, "pre": 338, "post": 361, "count": 1, "type": "sem_wait", "timestamp": 416872817318}
+{"sem": 4, "post": 361, "type": "sem_wait_completed", "timestamp": 416872834772}
+{"vertex": 362, "type": "vertex_ctor", "timestamp": 416872848479}
+{"pre": 361, "post": 362, "speculative": false, "type": "edge", "timestamp": 416872865791}
+{"vertex": 361, "type": "vertex_dtor", "timestamp": 416872882273}
+{"vertex": 363, "type": "vertex_ctor", "timestamp": 416872894335}
+{"vertex": 363, "type": "vertex_dtor", "timestamp": 416872906900}
+{"vertex": 364, "type": "vertex_ctor", "timestamp": 416872936336}
+{"pre": 362, "post": 364, "speculative": true, "type": "edge", "timestamp": 416872953628}
+{"pre": 362, "post": 364, "speculative": false, "type": "edge", "timestamp": 416872975941}
+{"vertex": 362, "type": "vertex_dtor", "timestamp": 416873007130}
+{"vertex": 365, "type": "vertex_ctor", "timestamp": 416873041255}
+{"pre": 364, "post": 365, "speculative": false, "type": "edge", "timestamp": 416873058990}
+{"vertex": 364, "type": "vertex_dtor", "timestamp": 416873077906}
+{"vertex": 366, "type": "vertex_ctor", "timestamp": 416873090280}
+{"vertex": 365, "type": "vertex_dtor", "timestamp": 416873104046}
+{"vertex": 367, "type": "vertex_ctor", "timestamp": 416873116379}
+{"pre": 366, "post": 367, "speculative": true, "type": "edge", "timestamp": 416873133823}
+{"pre": 366, "post": 367, "speculative": false, "type": "edge", "timestamp": 416873156455}
+{"vertex": 367, "type": "vertex_dtor", "timestamp": 416873173167}
+{"vertex": 366, "type": "vertex_dtor", "timestamp": 416873185863}
+{"vertex": 368, "type": "vertex_ctor", "timestamp": 416873199558}
+{"pre": 360, "post": 368, "speculative": false, "type": "edge", "timestamp": 416873216992}
+{"vertex": 360, "type": "vertex_dtor", "timestamp": 416873233433}
+{"vertex": 369, "type": "vertex_ctor", "timestamp": 416873245606}
+{"vertex": 370, "type": "vertex_ctor", "timestamp": 416873258611}
+{"pre": 356, "post": 370, "speculative": false, "type": "edge", "timestamp": 416873287516}
+{"vertex": 356, "type": "vertex_dtor", "timestamp": 416873306793}
+{"vertex": 371, "type": "vertex_ctor", "timestamp": 416873318956}
+{"vertex": 371, "type": "vertex_dtor", "timestamp": 416873331761}
+{"vertex": 369, "type": "vertex_dtor", "timestamp": 416873346308}
+{"vertex": 372, "type": "vertex_ctor", "timestamp": 416873359053}
+{"pre": 355, "post": 372, "speculative": false, "type": "edge", "timestamp": 416873376856}
+{"pre": 368, "post": 354, "speculative": false, "type": "edge", "timestamp": 416873399590}
+{"vertex": 368, "type": "vertex_dtor", "timestamp": 416873416442}
+{"vertex": 373, "type": "vertex_ctor", "timestamp": 416873429487}
+{"pre": 338, "post": 373, "speculative": true, "type": "edge", "timestamp": 416873446870}
+{"vertex": 374, "type": "vertex_ctor", "timestamp": 416873463692}
+{"pre": 338, "post": 374, "speculative": true, "type": "edge", "timestamp": 416873481296}
+{"vertex": 375, "type": "vertex_ctor", "timestamp": 416873498179}
+{"vertex": 376, "type": "vertex_ctor", "timestamp": 416873510912}
+{"pre": 374, "post": 376, "speculative": false, "type": "edge", "timestamp": 416873528216}
+{"vertex": 374, "type": "vertex_dtor", "timestamp": 416873544647}
+{"vertex": 377, "type": "vertex_ctor", "timestamp": 416873556790}
+{"pre": 372, "post": 375, "speculative": false, "type": "edge", "timestamp": 416873574974}
+{"vertex": 377, "type": "vertex_dtor", "timestamp": 416873592057}
+{"pre": 372, "post": 373, "speculative": false, "type": "edge", "timestamp": 416873609972}
+{"vertex": 373, "type": "vertex_dtor", "timestamp": 416873628086}
+{"vertex": 372, "type": "vertex_dtor", "timestamp": 416873640610}
+{"vertex": 378, "type": "vertex_ctor", "timestamp": 416873653023}
+{"pre": 338, "post": 378, "speculative": true, "type": "edge", "timestamp": 416873670307}
+{"vertex": 379, "type": "vertex_ctor", "timestamp": 416873687159}
+{"pre": 378, "post": 379, "speculative": false, "type": "edge", "timestamp": 416873704482}
+{"vertex": 378, "type": "vertex_dtor", "timestamp": 416873720872}
+{"vertex": 380, "type": "vertex_ctor", "timestamp": 416873733067}
+{"vertex": 380, "type": "vertex_dtor", "timestamp": 416873745600}
+{"vertex": 381, "type": "vertex_ctor", "timestamp": 416873757874}
+{"pre": 379, "post": 381, "speculative": false, "type": "edge", "timestamp": 416873775256}
+{"vertex": 382, "type": "vertex_ctor", "timestamp": 416873792269}
+{"pre": 379, "post": 382, "speculative": false, "type": "edge", "timestamp": 416873809563}
+{"vertex": 379, "type": "vertex_dtor", "timestamp": 416873825924}
+{"vertex": 383, "type": "vertex_ctor", "timestamp": 416873838087}
+{"sem": 341, "pre": 338, "post": 383, "count": 1, "type": "sem_wait", "timestamp": 416873854828}
+{"vertex": 384, "type": "vertex_ctor", "timestamp": 416873871170}
+{"pre": 381, "post": 384, "speculative": false, "type": "edge", "timestamp": 416873888452}
+{"vertex": 381, "type": "vertex_dtor", "timestamp": 416873907559}
+{"vertex": 385, "type": "vertex_ctor", "timestamp": 416873919773}
+{"vertex": 385, "type": "vertex_dtor", "timestamp": 416873931876}
+{"vertex": 383, "type": "vertex_dtor", "timestamp": 416873944359}
+{"vertex": 386, "type": "vertex_ctor", "timestamp": 416873957214}
+{"pre": 338, "post": 386, "speculative": true, "type": "edge", "timestamp": 416873974617}
+{"vertex": 387, "type": "vertex_ctor", "timestamp": 416873991480}
+{"pre": 338, "post": 387, "speculative": true, "type": "edge", "timestamp": 416874009083}
+{"vertex": 388, "type": "vertex_ctor", "timestamp": 416874025975}
+{"vertex": 389, "type": "vertex_ctor", "timestamp": 416874038700}
+{"pre": 387, "post": 389, "speculative": false, "type": "edge", "timestamp": 416874056012}
+{"vertex": 387, "type": "vertex_dtor", "timestamp": 416874072384}
+{"vertex": 390, "type": "vertex_ctor", "timestamp": 416874084527}
+{"pre": 384, "post": 388, "speculative": false, "type": "edge", "timestamp": 416874102572}
+{"vertex": 390, "type": "vertex_dtor", "timestamp": 416874119565}
+{"pre": 384, "post": 386, "speculative": false, "type": "edge", "timestamp": 416874137528}
+{"vertex": 384, "type": "vertex_dtor", "timestamp": 416874154311}
+{"vertex": 391, "type": "vertex_ctor", "timestamp": 416874168587}
+{"pre": 342, "post": 391, "speculative": false, "type": "edge", "timestamp": 416874186341}
+{"pre": 386, "post": 340, "speculative": false, "type": "edge", "timestamp": 416874208664}
+{"vertex": 392, "type": "vertex_ctor", "timestamp": 416874225646}
+{"pre": 391, "post": 392, "speculative": false, "type": "edge", "timestamp": 416874243009}
+{"vertex": 391, "type": "vertex_dtor", "timestamp": 416874259391}
+{"vertex": 393, "type": "vertex_ctor", "timestamp": 416874271584}
+{"vertex": 393, "type": "vertex_dtor", "timestamp": 416874295149}
+{"vertex": 386, "type": "vertex_dtor", "timestamp": 416874307723}
+{"sem": 339, "type": "sem_dtor", "timestamp": 416874319646}
+{"pre": 338, "post": 392, "speculative": false, "type": "edge", "timestamp": 416874337480}
+{"vertex": 392, "type": "vertex_dtor", "timestamp": 416874354242}
+{"vertex": 338, "type": "vertex_dtor", "timestamp": 416874366695}
+{"vertex": 394, "type": "vertex_ctor", "timestamp": 416874378949}
+{"pre": 321, "post": 394, "speculative": true, "type": "edge", "timestamp": 416874396241}
+{"vertex": 394, "type": "vertex_dtor", "timestamp": 416874413185}
+{"pre": 321, "post": 322, "speculative": false, "type": "edge", "timestamp": 416874431169}
+{"vertex": 322, "type": "vertex_dtor", "timestamp": 416874450395}
+{"vertex": 321, "type": "vertex_dtor", "timestamp": 416874463020}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874497546}
+{"sem": 22, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874524818}
+{"pre": 326, "post": 327, "speculative": false, "type": "edge", "timestamp": 416874541911}
+{"vertex": 395, "type": "vertex_ctor", "timestamp": 416874558672}
+{"sem": 23, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874570385}
+{"pre": 326, "post": 395, "speculative": true, "type": "edge", "timestamp": 416874575895}
+{"vertex": 395, "type": "vertex_dtor", "timestamp": 416874592987}
+{"pre": 326, "post": 327, "speculative": false, "type": "edge", "timestamp": 416874610631}
+{"vertex": 327, "type": "vertex_dtor", "timestamp": 416874627424}
+{"vertex": 326, "type": "vertex_dtor", "timestamp": 416874639947}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874655437}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874670666}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874686086}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874700723}
+{"sem": 14, "vertex": 344, "count": 0, "type": "sem_signal", "timestamp": 416874714119}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874715221}
+{"vertex": 396, "type": "vertex_ctor", "timestamp": 416874729288}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874730109}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874744798}
+{"pre": 344, "post": 396, "speculative": true, "type": "edge", "timestamp": 416874747392}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874762912}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874777720}
+{"vertex": 397, "type": "vertex_ctor", "timestamp": 416874786697}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874792438}
+{"pre": 396, "post": 397, "speculative": true, "type": "edge", "timestamp": 416874804051}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874807136}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874821914}
+{"pre": 396, "post": 397, "speculative": false, "type": "edge", "timestamp": 416874826403}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874836513}
+{"sem": 19, "vertex": 358, "count": 0, "type": "sem_signal", "timestamp": 416874838606}
+{"vertex": 396, "type": "vertex_dtor", "timestamp": 416874843215}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874851151}
+{"vertex": 398, "type": "vertex_ctor", "timestamp": 416874862743}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874865838}
+{"vertex": 399, "type": "vertex_ctor", "timestamp": 416874873282}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874880467}
+{"pre": 358, "post": 398, "speculative": true, "type": "edge", "timestamp": 416874888902}
+{"pre": 397, "post": 399, "speculative": false, "type": "edge", "timestamp": 416874890556}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874895094}
+{"vertex": 397, "type": "vertex_dtor", "timestamp": 416874906846}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874910063}
+{"vertex": 400, "type": "vertex_ctor", "timestamp": 416874918990}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416874924630}
+{"vertex": 399, "type": "vertex_dtor", "timestamp": 416874933246}
+{"pre": 7, "post": 345, "speculative": false, "type": "edge", "timestamp": 416874945090}
+{"vertex": 401, "type": "vertex_ctor", "timestamp": 416874945470}
+{"vertex": 402, "type": "vertex_ctor", "timestamp": 416874946603}
+{"pre": 400, "post": 401, "speculative": true, "type": "edge", "timestamp": 416874962763}
+{"sem": 3, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416874969596}
+{"pre": 398, "post": 402, "speculative": true, "type": "edge", "timestamp": 416874971720}
+{"vertex": 345, "type": "vertex_dtor", "timestamp": 416874983072}
+{"pre": 400, "post": 401, "speculative": false, "type": "edge", "timestamp": 416874984775}
+{"vertex": 344, "type": "vertex_dtor", "timestamp": 416874995927}
+{"vertex": 401, "type": "vertex_dtor", "timestamp": 416875001327}
+{"pre": 398, "post": 402, "speculative": false, "type": "edge", "timestamp": 416875004253}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875010033}
+{"vertex": 400, "type": "vertex_dtor", "timestamp": 416875022989}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875025042}
+{"vertex": 398, "type": "vertex_dtor", "timestamp": 416875028629}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875039970}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875054689}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875069417}
+{"vertex": 403, "type": "vertex_ctor", "timestamp": 416875084025}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875084185}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875098843}
+{"pre": 402, "post": 403, "speculative": false, "type": "edge", "timestamp": 416875108933}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875119913}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875135193}
+{"vertex": 402, "type": "vertex_dtor", "timestamp": 416875142506}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875149900}
+{"vertex": 404, "type": "vertex_ctor", "timestamp": 416875160420}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875164589}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875179307}
+{"vertex": 403, "type": "vertex_dtor", "timestamp": 416875183234}
+{"pre": 7, "post": 359, "speculative": false, "type": "edge", "timestamp": 416875199896}
+{"vertex": 405, "type": "vertex_ctor", "timestamp": 416875200818}
+{"sem": 4, "vertex": 7, "count": 1, "type": "sem_signal", "timestamp": 416875216878}
+{"pre": 404, "post": 405, "speculative": true, "type": "edge", "timestamp": 416875225946}
+{"vertex": 359, "type": "vertex_dtor", "timestamp": 416875230194}
+{"vertex": 358, "type": "vertex_dtor", "timestamp": 416875242767}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875258027}
+{"pre": 404, "post": 405, "speculative": false, "type": "edge", "timestamp": 416875258117}
+{"vertex": 370, "type": "vertex_dtor", "timestamp": 416875286391}
+{"vertex": 405, "type": "vertex_dtor", "timestamp": 416875295598}
+{"pre": 354, "post": 355, "speculative": false, "type": "edge", "timestamp": 416875307461}
+{"vertex": 404, "type": "vertex_dtor", "timestamp": 416875316679}
+{"vertex": 355, "type": "vertex_dtor", "timestamp": 416875325025}
+{"vertex": 354, "type": "vertex_dtor", "timestamp": 416875337850}
+{"pre": 375, "post": 376, "speculative": false, "type": "edge", "timestamp": 416875373317}
+{"sem": 341, "vertex": 375, "count": 1, "type": "sem_signal", "timestamp": 416875389578}
+{"sem": 341, "post": 382, "type": "sem_wait_completed", "timestamp": 416875404466}
+{"pre": 375, "post": 382, "speculative": false, "type": "edge", "timestamp": 416875423022}
+{"vertex": 382, "type": "vertex_dtor", "timestamp": 416875440955}
+{"pre": 375, "post": 376, "speculative": false, "type": "edge", "timestamp": 416875466434}
+{"vertex": 376, "type": "vertex_dtor", "timestamp": 416875483577}
+{"vertex": 375, "type": "vertex_dtor", "timestamp": 416875496091}
+{"sem": 9, "vertex": 7, "count": 0, "type": "sem_signal", "timestamp": 416875512523}
+{"pre": 388, "post": 389, "speculative": false, "type": "edge", "timestamp": 416875556857}
+{"pre": 388, "post": 389, "speculative": false, "type": "edge", "timestamp": 416875579049}
+{"vertex": 389, "type": "vertex_dtor", "timestamp": 416875596323}
+{"vertex": 388, "type": "vertex_dtor", "timestamp": 416875608886}
+{"vertex": 342, "type": "vertex_dtor", "timestamp": 416875621861}
+{"sem": 341, "type": "sem_dtor", "timestamp": 416875633443}
+{"vertex": 340, "type": "vertex_dtor", "timestamp": 416875645126}
+{"sem": 22, "type": "sem_dtor", "timestamp": 416876170488}
+{"sem": 23, "type": "sem_dtor", "timestamp": 416876240272}
+{"sem": 16, "type": "sem_dtor", "timestamp": 416876392231}
+{"vertex": 15, "type": "vertex_dtor", "timestamp": 416876410316}
+{"vertex": 27, "type": "vertex_dtor", "timestamp": 416876423731}
+{"sem": 14, "type": "sem_dtor", "timestamp": 416876435625}
+{"sem": 21, "type": "sem_dtor", "timestamp": 416876510688}
+{"vertex": 20, "type": "vertex_dtor", "timestamp": 416876535905}
+{"vertex": 31, "type": "vertex_dtor", "timestamp": 416876555053}
+{"sem": 19, "type": "sem_dtor", "timestamp": 416876571673}
+{"sem": 9, "type": "sem_dtor", "timestamp": 416926024119}
+{"sem": 8, "type": "sem_dtor", "timestamp": 416926227617}
+{"vertex": 6, "type": "vertex_dtor", "timestamp": 416926244179}
+{"vertex": 28, "type": "vertex_dtor", "timestamp": 416926257384}
+{"sem": 5, "type": "sem_dtor", "timestamp": 416926269418}
+{"vertex": 286, "type": "vertex_dtor", "timestamp": 416926296158}
+{"sem": 2, "type": "sem_dtor", "timestamp": 416973321681}
+{"sem": 3, "type": "sem_dtor", "timestamp": 416973366056}
+{"sem": 4, "type": "sem_dtor", "timestamp": 416973377597}
