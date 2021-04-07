@@ -1,3 +1,6 @@
+/*
+ * Deadlock happens when simulate_work is given an argument >> 0
+ */
 #include <iostream>
 #include <chrono>
 #include <random>
@@ -38,14 +41,14 @@ static seastar::future<> simulate_work(size_t milliseconds) {
 // Runs second stage of computation, taking lock again (allowing for deadlock).
 static seastar::future<> run_2() {
     return seastar::with_semaphore(limit_concurrent, 1, [] {
-        return simulate_work(10);
+        return simulate_work(0);
     });
 }
 
 // Runs first stage of computation, taking lock.
 static seastar::future<> run_1(int i) {
     return seastar::with_semaphore(limit_concurrent, 1, [i] {
-        return simulate_work(10).then([i] {
+        return simulate_work(0).then([i] {
             std::cout << i << " finished first work" << std::endl;
             return run_2().then([i] {
                 std::cout << i << " finished second work" << std::endl;

@@ -55,5 +55,25 @@ macro (seastar_add_test name)
 endmacro ()
 
 seastar_add_test (multiple_fibers_for_each
-  SOURCES multiple_fibers_for_each.cc)
+        SOURCES multiple_fibers_for_each.cc)
 
+seastar_add_test (long_fiber
+        SOURCES long_fiber.cc)
+
+seastar_add_test (simple_wait
+        SOURCES simple_wait.cc)
+
+seastar_add_test (two_fibers_condition_variable
+        SOURCES two_fibers_condition_variable.cc)
+
+seastar_add_test (two_fibers_semaphore
+        SOURCES two_fibers_semaphore.cc)
+
+seastar_add_test (two_fibers_simple
+        SOURCES two_fibers_simple.cc)
+
+seastar_add_test (two_shards_better
+        SOURCES two_shards_better.cc)
+
+seastar_add_test (philosophers
+        SOURCES philosophers.cc)
