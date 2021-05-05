@@ -312,6 +312,85 @@ static tracer& get_tracer() {
     return t;
 }
 
+/// Checks if current state allows tracing.
+static bool can_trace() {
+    if (!(trace_state::START_TRACE <= local_trace_state && local_trace_state < trace_state::STOPPED_TRACE)) {
+        return false;
+    }
+    if (local_trace_state == trace_state::GLOBAL_SYNC) {
+        return global_can_append_trace.load();
+    }
+    return true;
+}
+
+/// Serializes and writes data to appropriate file.
+static void write_data(deadlock_trace& data, bool can_wake = true) {
+    assert(can_trace() || local_trace_state == trace_state::GLOBAL_SYNC);
+    auto now = std::chrono::steady_clock::now();
+    auto nanoseconds = std::chrono::nanoseconds(now.time_since_epoch()).count();
+    data.set_timestamp(nanoseconds);
+    get_tracer().trace(data, can_wake);
+}
+
+/// Traces const string.
+static void trace_string_id(const char* ptr, size_t id) {
+    assert(can_trace() || local_trace_state == trace_state::GLOBAL_SYNC);
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::STRING_ID);
+    data.set_value(id);
+    data.set_extra(ptr);
+    // Trace string id can't wake tracer because it can be called recursively.
+    write_data(data, false);
+}
+
+/// Maps const string to it's id, traces new entry if necessary.
+static size_t get_string_id(const char* ptr) {
+    assert(can_trace() || local_trace_state == trace_state::GLOBAL_SYNC);
+    static thread_local std::unordered_map<const char*, size_t> ids;
+    static thread_local size_t next_id = 0;
+    auto it = ids.find(ptr);
+    if (it == ids.end()) {
+        size_t new_id = next_id++;
+        ids.emplace(ptr, new_id);
+
+        trace_string_id(ptr, new_id);
+
+        return new_id;
+    }
+
+    return it->second;
+}
+
+/// Converts runtime vertex to serializable data.
+static void serialize_vertex(const runtime_vertex& v, deadlock_trace::typed_address* data) {
+    data->set_address(v.get_ptr());
+    data->set_type_id(get_string_id(v._type->name()));
+}
+
+/// Converts runtime vertex to serializable data without debug info.
+static void serialize_vertex_short(const runtime_vertex& v, deadlock_trace::typed_address* data) {
+    data->set_address(v.get_ptr());
+}
+
+/// Converts semaphore to serializable data.
+static void serialize_semaphore(const void* sem, size_t count, deadlock_trace& data) {
+    data.set_sem(reinterpret_cast<uintptr_t>(sem));
+    data.set_value(count);
+}
+
+/// Converts semaphore to serializable data without debug info.
+static uintptr_t serialize_semaphore_short(const void* sem) {
+    return reinterpret_cast<uintptr_t>(sem);
+}
+
+bool operator==(const runtime_vertex& lhs, const runtime_vertex& rhs) {
+    return lhs._ptr == rhs._ptr && lhs._base_type->hash_code() == rhs._base_type->hash_code();
+}
+
+uintptr_t runtime_vertex::get_ptr() const noexcept {
+    return (uintptr_t)_ptr;
+}
+
 future<> start_tracing() {
     return seastar::smp::invoke_on_all([] {
         assert(local_trace_state == trace_state::BEFORE_INITIALIZATION);
@@ -343,6 +422,144 @@ future<> stop_tracing() {
             });
         });
     });
+}
+
+/// Global variable for storing currently executed runtime graph vertex.
+static runtime_vertex& current_traced_ptr() {
+    static thread_local runtime_vertex ptr(nullptr);
+    return ptr;
+}
+
+runtime_vertex get_current_traced_ptr() {
+    return runtime_vertex(runtime_vertex::current_traced_vertex_marker());
+}
+
+current_traced_vertex_updater::current_traced_vertex_updater(runtime_vertex new_ptr, bool create_edge)
+        : _previous_ptr(current_traced_ptr()), _new_ptr(new_ptr) {
+    current_traced_ptr() = _new_ptr;
+
+    if (!can_trace()) return;
+
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::PUSH_CURRENT_VERTEX);
+    serialize_vertex(new_ptr, data.mutable_vertex());
+    data.set_value(create_edge);
+    write_data(data);
+}
+
+current_traced_vertex_updater::~current_traced_vertex_updater() {
+    // Check if stack nature of traced pointers isn't broken.
+    assert(current_traced_ptr() == _new_ptr);
+    current_traced_ptr() = _previous_ptr;
+
+    if (!can_trace()) return;
+
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::POP_CURRENT_VERTEX);
+    write_data(data);
+}
+
+void trace_edge(runtime_vertex pre, runtime_vertex post, bool speculative) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::EDGE);
+    serialize_vertex(pre, data.mutable_pre());
+    serialize_vertex(post, data.mutable_vertex());
+    data.set_value(speculative);
+    write_data(data);
+}
+
+void trace_vertex_constructor(runtime_vertex v) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::VERTEX_CTOR);
+    serialize_vertex(v, data.mutable_vertex());
+    write_data(data);
+}
+
+void trace_vertex_destructor(runtime_vertex v) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::VERTEX_DTOR);
+    serialize_vertex(v, data.mutable_vertex());
+    write_data(data);
+}
+
+void trace_semaphore_constructor(const void* sem, size_t count) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::SEM_CTOR);
+    serialize_semaphore(sem, count, data);
+    write_data(data);
+}
+
+void trace_semaphore_destructor(const void* sem, size_t count) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::SEM_DTOR);
+    serialize_semaphore(sem, count, data);
+    write_data(data);
+}
+
+void attach_func_type(runtime_vertex ptr, const std::type_info& func_type, const char* file, uint32_t line) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::FUNC_TYPE);
+    serialize_vertex(ptr, data.mutable_vertex());
+    data.set_value(get_string_id(func_type.name()));
+    data.set_extra(fmt::format("{}:{}", file, line));
+    write_data(data);
+}
+
+void trace_move_vertex(runtime_vertex from, runtime_vertex to) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::VERTEX_MOVE);
+    serialize_vertex_short(to, data.mutable_vertex());
+    serialize_vertex_short(from, data.mutable_pre());
+    write_data(data);
+}
+
+void trace_move_semaphore(const void* from, const void* to) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::SEM_MOVE);
+    data.set_sem(serialize_semaphore_short(to));
+    data.mutable_pre()->set_address(serialize_semaphore_short(from));
+    write_data(data);
+}
+
+void trace_semaphore_signal(const void* sem, ssize_t count, runtime_vertex caller) {
+    if (!can_trace()) return;
+    if (count == 0) {
+        return;
+    }
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::SEM_SIGNAL);
+    data.set_sem(serialize_semaphore_short(sem));
+    data.set_value(count);
+    serialize_vertex_short(caller, data.mutable_vertex());
+    write_data(data);
+}
+
+void trace_semaphore_wait_completed(const void* sem, runtime_vertex post) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::SEM_WAIT_CMPL);
+    data.set_sem(serialize_semaphore_short(sem));
+    serialize_vertex_short(post, data.mutable_vertex());
+    write_data(data);
+}
+
+void trace_semaphore_wait(const void* sem, size_t count, runtime_vertex pre, runtime_vertex post) {
+    if (!can_trace()) return;
+    static thread_local deadlock_trace data;
+    data.set_type(deadlock_trace::SEM_WAIT);
+    data.set_sem(serialize_semaphore_short(sem));
+    data.set_value(count);
+    serialize_vertex_short(post, data.mutable_vertex());
+    serialize_vertex_short(pre, data.mutable_pre());
+    write_data(data);
 }
 
 }
