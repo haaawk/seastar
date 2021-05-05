@@ -508,6 +508,7 @@ add_library (seastar STATIC
   include/seastar/core/stream.hh
   include/seastar/core/systemwide_memory_barrier.hh
   include/seastar/core/task.hh
+  include/seastar/core/internal/deadlock_utils.hh
   include/seastar/core/temporary_buffer.hh
   include/seastar/core/thread.hh
   include/seastar/core/thread_cputime_clock.hh
