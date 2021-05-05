@@ -54,6 +54,10 @@ option (Seastar_TASK_BACKTRACE
   "Collect backtrace at deferring points."
   OFF)
 
+option (Seastar_DEADLOCK_DETECTION
+  "Enable deadlock detection"
+  OFF)
+
 option (Seastar_DEBUG_ALLOCATIONS
   "For now just writes 0xab to newly allocated memory"
   OFF)
@@ -805,6 +809,11 @@ endif ()
 if (Seastar_TASK_BACKTRACE)
   target_compile_definitions (seastar
     PUBLIC SEASTAR_TASK_BACKTRACE)
+endif ()
+
+if (Seastar_DEADLOCK_DETECTION)
+  target_compile_definitions (seastar
+    PUBLIC SEASTAR_DEADLOCK_DETECTION)
 endif ()
 
 if (Seastar_DEBUG_ALLOCATIONS)
