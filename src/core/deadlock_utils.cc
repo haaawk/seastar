@@ -260,7 +260,7 @@ public:
     /// Starts tracer loop and initializes additional needed data.
     void start() {
         _id = seastar::this_shard_id();
-        _new_data = std::make_unique<seastar::condition_variable>();
+        _new_data = std::make_unique<seastar::condition_variable>(seastar::deadlock_detection::SEM_DISABLE);
         assert(_state == state::DISABLED);
         _state = state::RUNNING;
         auto init_future = seastar::open_file_dma(

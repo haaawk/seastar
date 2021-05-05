@@ -50,6 +50,18 @@ class promise_base_with_type;
 
 namespace deadlock_detection {
 
+/// Helper struct to disable deadlock tracing of system semaphores.
+struct sem_disable {
+private:
+    bool _value;
+
+public:
+    constexpr bool value() const noexcept { return _value; }
+    constexpr sem_disable(bool v) : _value(v) {}
+};
+constexpr sem_disable SEM_DISABLE(true);
+constexpr sem_disable SEM_ENABLE(false);
+
 // Elements in tuple are: base address, base type, actual type.
 using info_tuple = std::tuple<const void*, const std::type_info*, const std::type_info*>;
 
@@ -162,6 +174,12 @@ future<void> stop_tracing();
 #else
 
 namespace deadlock_detection {
+
+struct sem_disable {
+    constexpr bool value() const noexcept { return true; }
+};
+constexpr sem_disable SEM_DISABLE;
+constexpr sem_disable SEM_ENABLE;
 
 // Mutliple empty functions to be optimized out when deadlock detection is disabled.
 constexpr void trace_edge(const void*, const void*, bool = false) {}

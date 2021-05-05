@@ -38,7 +38,7 @@ class syscall_work_queue {
     lf_queue _pending;
     lf_queue _completed;
     writeable_eventfd _start_eventfd;
-    semaphore _queue_has_room = { queue_length };
+    semaphore _queue_has_room = { queue_length, deadlock_detection::SEM_DISABLE };
     struct work_item {
         virtual ~work_item() {}
         virtual void process() = 0;

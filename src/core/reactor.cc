@@ -877,7 +877,7 @@ reactor::reactor(unsigned id, reactor_backend_selector rbs, reactor_config cfg)
         [&] { timer_thread_func(); }, sched::thread::attr().stack(4096).name("timer_thread").pin(sched::cpu::current()))
     , _engine_thread(sched::thread::current())
 #endif
-    , _cpu_started(0)
+    , _cpu_started(0, deadlock_detection::SEM_DISABLE)
     , _cpu_stall_detector(std::make_unique<cpu_stall_detector>())
     , _reuseport(posix_reuseport_detect())
     , _thread_pool(std::make_unique<thread_pool>(this, seastar::format("syscall-{}", id))) {

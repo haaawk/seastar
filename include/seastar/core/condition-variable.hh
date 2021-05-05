@@ -79,7 +79,7 @@ public:
     /// Constructs a condition_variable object.
     /// Initialzie the semaphore with a default value of 0 to enusre
     /// the first call to wait() before signal() won't be waken up immediately.
-    condition_variable() : _sem(0) {}
+    condition_variable(deadlock_detection::sem_disable disable = deadlock_detection::SEM_ENABLE) : _sem(0, disable) {}
 
     /// Waits until condition variable is signaled, may wake up without condition been met
     ///

@@ -267,7 +267,8 @@ private:
     bool _stopping = false;
     bool _stopped = false;
     bool _finished_running_tasks = false;
-    condition_variable _stop_requested;
+    // Semaphore is not traced in deadlock detection to decrease noise.
+    condition_variable _stop_requested{deadlock_detection::SEM_DISABLE};
     bool _handle_sigint = true;
     std::optional<future<std::unique_ptr<network_stack>>> _network_stack_ready;
     int _return = 0;

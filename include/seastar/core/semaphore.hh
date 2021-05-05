@@ -27,6 +27,7 @@
 #include <exception>
 #include <seastar/core/timer.hh>
 #include <seastar/core/expiring_fifo.hh>
+#include <seastar/core/internal/deadlock_utils.hh>
 
 namespace seastar {
 
@@ -145,7 +146,22 @@ private:
     bool may_proceed(size_t nr) const {
         return has_available_units(nr) && _wait_list.empty();
     }
+    deadlock_detection::sem_disable _deadlock_disable;
 public:
+    basic_semaphore(basic_semaphore&& other) noexcept : _count(other._count), _ex(std::move(other._ex)), _wait_list(std::move(other._wait_list)),
+            _deadlock_disable(other._deadlock_disable) {
+        // In order for semaphore to work at all, the semaphore that has issued any waits
+        // cannot be moved, therefore we just mark the creation and deletion, and not any edge
+        // in between.
+        if (!_deadlock_disable.value()) {
+            deadlock_detection::trace_move_semaphore(&other, this);
+        }
+    }
+    ~basic_semaphore() {
+        if (!_deadlock_disable.value()) {
+            deadlock_detection::trace_semaphore_destructor(this);
+        }
+    }
     /// Returns the maximum number of units the semaphore counter can hold
     static constexpr size_t max_counter() {
         return std::numeric_limits<decltype(_count)>::max();
@@ -156,8 +172,20 @@ public:
     /// an unlocked mutex.
     ///
     /// \param count number of initial units present in the counter.
-    basic_semaphore(size_t count) : _count(count) {}
-    basic_semaphore(size_t count, exception_factory&& factory) : exception_factory(factory), _count(count), _wait_list(expiry_handler(std::move(factory))) {}
+    /// \param disable exclude this semaphore from deadlock detection, if it was enabled.
+    basic_semaphore(size_t count, deadlock_detection::sem_disable disable = deadlock_detection::SEM_ENABLE)
+            : _count(count), _deadlock_disable(disable) {
+        if (!_deadlock_disable.value()) {
+            // Trace creation of semaphore.
+            deadlock_detection::trace_semaphore_constructor(this);
+        }
+    }
+    basic_semaphore(size_t count, exception_factory&& factory, deadlock_detection::sem_disable disable = deadlock_detection::SEM_ENABLE)
+            : exception_factory(factory), _count(count), _wait_list(expiry_handler(std::move(factory))), _deadlock_disable(disable) {
+        if (!_deadlock_disable.value()) {
+            deadlock_detection::trace_semaphore_constructor(this);
+        }
+    }
     /// Waits until at least a specific number of units are available in the
     /// counter, and reduces the counter by that amount of units.
     ///
@@ -187,7 +215,13 @@ public:
     future<> wait(time_point timeout, size_t nr = 1) noexcept {
         if (may_proceed(nr)) {
             _count -= nr;
-            return make_ready_future<>();
+            auto fut = make_ready_future<>();
+            if (!_deadlock_disable.value()) {
+                // Wait is instantly completed, so create two traces.
+                deadlock_detection::trace_semaphore_wait(this, nr, deadlock_detection::get_current_traced_ptr(), &fut);
+                deadlock_detection::trace_semaphore_wait_completed(this, &fut);
+            }
+            return fut;
         }
         if (_ex) {
             return make_exception_future(_ex);
@@ -195,6 +229,11 @@ public:
         entry e(promise<>(), nr);
         auto fut = e.pr.get_future();
         try {
+            if (!_deadlock_disable.value()) {
+                // Trace must be before promise is moved.
+                // If push_back fails then the wait won't be completed, but won't break detection.
+                deadlock_detection::trace_semaphore_wait(this, nr, deadlock_detection::get_current_traced_ptr(), &e.pr);
+            }
             _wait_list.push_back(std::move(e), timeout);
         } catch (...) {
             e.pr.set_exception(std::current_exception());
@@ -228,13 +267,22 @@ public:
     ///
     /// \param nr Number of units to deposit (default 1).
     void signal(size_t nr = 1) {
+        if (!_deadlock_disable.value()) {
+            deadlock_detection::trace_semaphore_signal(this, nr, deadlock_detection::get_current_traced_ptr());
+        }
         if (_ex) {
             return;
         }
         _count += nr;
         while (!_wait_list.empty() && has_available_units(_wait_list.front().nr)) {
             auto& x = _wait_list.front();
+            // Update current vertex, so there isn't edge from signalling task to woken task.
+            deadlock_detection::current_traced_vertex_updater update(nullptr, false);
             _count -= x.nr;
+            if (!_deadlock_disable.value()) {
+                // Wait finished now.
+                deadlock_detection::trace_semaphore_wait_completed(this, &x.pr);
+            }
             x.pr.set_value();
             _wait_list.pop_front();
         }
@@ -248,6 +296,10 @@ public:
     ///
     /// \param nr Amount of units to consume (default 1).
     void consume(size_t nr = 1) noexcept {
+        if (!_deadlock_disable.value()) {
+            // Trace this as signal, because it has the same semantics.
+            deadlock_detection::trace_semaphore_signal(this, -nr, deadlock_detection::get_current_traced_ptr());
+        }
         if (_ex) {
             return;
         }
