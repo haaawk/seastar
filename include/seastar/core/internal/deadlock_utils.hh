@@ -21,13 +21,10 @@
 
 #pragma once
 
-#include <list>
-#include <map>
-#include <variant>
-#include <assert.h>
-#include <stdint.h>
-#include <string>
+#include <cstddef>
+#include <cassert>
 #include <typeinfo>
+#include <tuple>
 
 namespace seastar {
 
@@ -132,14 +129,14 @@ void trace_move_vertex(runtime_vertex from, runtime_vertex to);
 
 
 /// Traces construction of semaphore.
-void trace_semaphore_constructor(const void* sem, size_t count);
+void trace_semaphore_constructor(const void* sem, std::size_t count);
 template <typename T1, typename T2>
 void inline trace_semaphore_constructor(const basic_semaphore<T1, T2>* sem) {
     trace_semaphore_constructor(static_cast<const void*>(sem), sem->available_units());
 }
 
 /// Traces destruction of semaphore.
-void trace_semaphore_destructor(const void* sem, size_t count);
+void trace_semaphore_destructor(const void* sem, std::size_t count);
 template <typename T1, typename T2>
 void inline trace_semaphore_destructor(const basic_semaphore<T1, T2>* sem) {
     trace_semaphore_destructor(static_cast<const void*>(sem), sem->available_units());
@@ -155,7 +152,7 @@ void trace_semaphore_signal(const void* sem, ssize_t count, runtime_vertex calle
 void trace_semaphore_wait_completed(const void* sem, runtime_vertex post);
 
 /// Traces successful wait on a semaphore with the vertex that is result of wait.
-void trace_semaphore_wait(const void* sem, size_t count, runtime_vertex pre, runtime_vertex post);
+void trace_semaphore_wait(const void* sem, std::size_t count, runtime_vertex pre, runtime_vertex post);
 
 void attach_func_type(runtime_vertex pt, const std::type_info& func_typ, const char* file = __builtin_FILE(), uint32_t line = __builtin_LINE());
 template <typename FuncType>
@@ -193,7 +190,7 @@ constexpr void trace_semaphore_constructor(const void*) {}
 constexpr void trace_semaphore_destructor(const void*) {}
 constexpr void trace_semaphore_signal(const void*, ssize_t, const void*) {}
 constexpr void trace_semaphore_wait_completed(const void*, const void*) {}
-constexpr void trace_semaphore_wait(const void*, size_t, const void*, const void*) {}
+constexpr void trace_semaphore_wait(const void*, std::size_t, const void*, const void*) {}
 constexpr void attach_func_type(const void*, const char* = nullptr, const char* = nullptr, uint32_t = 0) {}
 future<void> start_tracing();
 future<void> stop_tracing();

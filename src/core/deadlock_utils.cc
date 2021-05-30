@@ -20,7 +20,6 @@
  */
 
 #ifdef SEASTAR_DEADLOCK_DETECTION
-#include <sys/types.h>
 #include <seastar/core/internal/deadlock_utils.hh>
 #include <seastar/core/task.hh>
 #include <seastar/core/reactor.hh>
@@ -412,7 +411,6 @@ future<> stop_tracing() {
         // shard 1 run smp task creating edge from the task
         // Vertex in said edge has missing ctor, breaking parser.
         global_can_append_trace.store(false);
-    }).finally([] {
         return seastar::smp::invoke_on_all([] {
             assert(local_trace_state == trace_state::GLOBAL_SYNC);
             local_trace_state = trace_state::FLUSHING;
