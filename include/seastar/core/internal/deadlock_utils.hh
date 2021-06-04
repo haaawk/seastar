@@ -23,8 +23,10 @@
 
 #include <cstddef>
 #include <cassert>
+#include <cstdint>
 #include <typeinfo>
 #include <tuple>
+#include <unistd.h>
 
 namespace seastar {
 
@@ -77,7 +79,7 @@ inline info_tuple get_info(const task* ptr);
 /// Represents runtime vertex (e.g. task, promise, future),
 /// in a way that doesn't use template and allows to remove cyclical dependencies.
 struct runtime_vertex {
-    uintptr_t _ptr;
+    std::uintptr_t _ptr;
     const std::type_info* _base_type;
     const std::type_info* _type;
 
