@@ -20,12 +20,14 @@
  */
 
 #ifdef SEASTAR_DEADLOCK_DETECTION
+#include <map>
+#include <optional>
 #include <seastar/core/internal/deadlock_utils.hh>
 #include <seastar/core/task.hh>
 #include <seastar/core/reactor.hh>
-#include <map>
 #include <seastar/core/file.hh>
 #include <seastar/core/sstring.hh>
+#include <seastar/core/sharded.hh>
 #include <proto/deadlock_trace.pb.h>
 
 // Current state of tracing, doesn't work with multiple calls to app_template::run().
@@ -132,9 +134,9 @@ private:
     };
 
     // Future that represents tracer has stopped.
-    std::unique_ptr<seastar::future<>> _operation{};
+    std::optional<seastar::future<>> _operation{};
     // Condition variable for waking up worker.
-    std::unique_ptr<seastar::condition_variable> _new_data{};
+    std::optional<seastar::condition_variable> _new_data{};
     // Buffer to which traces are appended.
     buffer _trace_buffer{};
     // Buffer from which I/O is outgoind.
@@ -164,6 +166,7 @@ private:
 
     // Main worker loop.
     seastar::future<> loop(seastar::file&& file) {
+        assert(chunk_size % file.disk_read_dma_alignment());
         _file_size = 0;
         return seastar::do_with(std::move(file), [this](auto& file) {
             return seastar::repeat([&file, this] {
@@ -259,7 +262,7 @@ public:
     /// Starts tracer loop and initializes additional needed data.
     void start() {
         _id = seastar::this_shard_id();
-        _new_data = std::make_unique<seastar::condition_variable>(seastar::deadlock_detection::SEM_DISABLE);
+        _new_data.emplace(seastar::deadlock_detection::SEM_DISABLE);
         assert(_state == state::DISABLED);
         _state = state::RUNNING;
         auto init_future = seastar::open_file_dma(
@@ -268,7 +271,7 @@ public:
         ).then([this](seastar::file file) {
             return loop(std::move(file));
         });
-        _operation = std::make_unique<seastar::future<>>(std::move(init_future));
+        _operation = std::move(init_future);
     }
 
     /// Returns future representing tracer stop.
@@ -395,9 +398,8 @@ future<> start_tracing() {
         assert(local_trace_state == trace_state::BEFORE_INITIALIZATION);
         local_trace_state = trace_state::STARTING_TRACER;
         get_tracer().start();
-        assert(local_trace_state == trace_state::STARTING_TRACER);
         local_trace_state = trace_state::RUNNING;
-    }).discard_result();
+    });
 }
 
 future<> stop_tracing() {
