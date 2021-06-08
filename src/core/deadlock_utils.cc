@@ -19,18 +19,16 @@
  * Copyright (C) 2020 ScyllaDB
  */
 
-#include "seastar/core/future.hh"
-#include "seastar/core/loop.hh"
-#include <stdexcept>
 #ifdef SEASTAR_DEADLOCK_DETECTION
+#include <stdexcept>
 #include <map>
 #include <optional>
 #include <seastar/core/internal/deadlock_utils.hh>
+#include <seastar/core/future.hh>
+#include <seastar/core/loop.hh>
 #include <seastar/core/task.hh>
 #include <seastar/core/reactor.hh>
 #include <seastar/core/file.hh>
-#include <seastar/core/sstring.hh>
-#include <seastar/core/sharded.hh>
 #include <proto/deadlock_trace.pb.h>
 
 // Current state of tracing, doesn't work with multiple calls to app_template::run().
