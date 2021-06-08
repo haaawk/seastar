@@ -36,7 +36,7 @@ struct smp_service_group_impl {
     std::vector<smp_service_group_semaphore> clients;   // one client per server shard
 };
 
-static smp_service_group_semaphore smp_service_group_management_sem{1, named_semaphore_exception_factory{"smp_service_group_management_sem"}};
+static smp_service_group_semaphore smp_service_group_management_sem{1, named_semaphore_exception_factory{"smp_service_group_management_sem"}, deadlock_detection::SEM_DISABLE};
 static thread_local std::vector<smp_service_group_impl> smp_service_groups;
 
 static named_semaphore_exception_factory make_service_group_semaphore_exception_factory(unsigned id, shard_id client_cpu, shard_id this_cpu, std::optional<sstring> smp_group_name) {
@@ -104,7 +104,7 @@ void init_default_smp_service_group(shard_id cpu) {
     auto& ssg0 = smp_service_groups.back();
     ssg0.clients.reserve(smp::count);
     for (unsigned i = 0; i != smp::count; ++i) {
-        ssg0.clients.emplace_back(smp_service_group_semaphore::max_counter(), make_service_group_semaphore_exception_factory(0, i, cpu, {"default"}));
+        ssg0.clients.emplace_back(smp_service_group_semaphore::max_counter(), make_service_group_semaphore_exception_factory(0, i, cpu, {"default"}), deadlock_detection::SEM_DISABLE);
     }
 }
 

@@ -77,6 +77,8 @@ static void set_to_broken_promise(future_state_base& state) noexcept {
 }
 
 promise_base::promise_base(promise_base&& x) noexcept {
+    // Trace actual move constructor.
+    deadlock_detection::trace_move_vertex(&x, this);
     move_it(std::move(x));
 }
 
@@ -97,6 +99,15 @@ void promise_base::clear() noexcept {
 
 promise_base& promise_base::operator=(promise_base&& x) noexcept {
     clear();
+    // Semantics of assigment operator are different than of move constructor.
+    // (this) must stay as the same object, because there are pointers to it.
+    // This edge is needed because if something happened before x,
+    // then it must also happen before next operation on this.
+    // Most importantly before making this ready.
+    deadlock_detection::trace_edge(&x, this, true);
+    // Reset x because it's no longer connected to its continuation.
+    deadlock_detection::trace_vertex_destructor(&x);
+    deadlock_detection::trace_vertex_constructor(&x);
     move_it(std::move(x));
     return *this;
 }
@@ -108,11 +119,16 @@ void promise_base::set_to_current_exception() noexcept {
 template <promise_base::urgent Urgent>
 void promise_base::make_ready() noexcept {
     if (_task) {
+        // Promise becomes ready so the edge is not speculative.
+        deadlock_detection::trace_edge(this, _task);
         if (Urgent == urgent::yes) {
             ::seastar::schedule_urgent(std::exchange(_task, nullptr));
         } else {
             ::seastar::schedule(std::exchange(_task, nullptr));
         }
+    } else if (_future) {
+        // Promise becomes ready so the edge is not speculative.
+        deadlock_detection::trace_edge(this, _future);
     }
 }
 

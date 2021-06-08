@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+package seastar.deadlock_detection;
+
+message deadlock_trace {
+  enum event_type {
+    EDGE = 0;		// pre, vertex(post), value(speculative)
+    VERTEX_CTOR = 1;	// vertex
+    VERTEX_DTOR = 2;	// vertex
+    VERTEX_MOVE = 3;	// pre, vertex
+    SEM_CTOR = 4;	// sem, value(count)
+    SEM_DTOR = 5;	// sem, value(count)
+    SEM_MOVE = 6;	// pre, sem
+    STRING_ID = 7;	// value(id), extra(string)
+    FUNC_TYPE = 8;	// vertex, value(func_type id), extra(file:line)
+    SEM_SIGNAL = 9;	// sem, value(count), vertex
+    SEM_WAIT = 10;	// sem, pre, vertex(post), value(count)
+    SEM_WAIT_CMPL = 11;	// sem, vertex(post)
+    PUSH_CURRENT_VERTEX = 12; // vertex, value(create_edge)
+    POP_CURRENT_VERTEX = 13; // no arguments
+  }
+  required event_type type = 1;
+  required uint64 timestamp = 2;
+  optional uint64 value = 3;
+  message typed_address {
+    required uint64 address = 1;
+    optional uint64 type_id = 2;
+  }
+  optional typed_address vertex = 4;
+  optional typed_address pre = 5;
+  optional uint64 sem = 6;
+  optional string extra = 7;
+}

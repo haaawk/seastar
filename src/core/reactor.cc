@@ -128,6 +128,7 @@
 #include <seastar/core/metrics.hh>
 #include <seastar/core/execution_stage.hh>
 #include <seastar/core/exception_hacks.hh>
+#include <seastar/core/internal/deadlock_utils.hh>
 #include "stall_detector.hh"
 
 #include <yaml-cpp/yaml.h>
@@ -876,7 +877,7 @@ reactor::reactor(unsigned id, reactor_backend_selector rbs, reactor_config cfg)
         [&] { timer_thread_func(); }, sched::thread::attr().stack(4096).name("timer_thread").pin(sched::cpu::current()))
     , _engine_thread(sched::thread::current())
 #endif
-    , _cpu_started(0)
+    , _cpu_started(0, deadlock_detection::SEM_DISABLE)
     , _cpu_stall_detector(std::make_unique<cpu_stall_detector>())
     , _reuseport(posix_reuseport_detect())
     , _thread_pool(std::make_unique<thread_pool>(this, seastar::format("syscall-{}", id))) {
@@ -2195,7 +2196,11 @@ void reactor::run_tasks(task_queue& tq) {
         STAP_PROBE(seastar, reactor_run_tasks_single_start);
         task_histogram_add_task(*tsk);
         _current_task = tsk;
-        tsk->run_and_dispose();
+        {
+            // Update current task here.
+            deadlock_detection::current_traced_vertex_updater update_vertex(tsk, false);
+            tsk->run_and_dispose();
+        }
         _current_task = nullptr;
         STAP_PROBE(seastar, reactor_run_tasks_single_end);
         ++tq._tasks_processed;
