@@ -19,6 +19,9 @@
  * Copyright (C) 2020 ScyllaDB
  */
 
+#include "seastar/core/future.hh"
+#include "seastar/core/loop.hh"
+#include <stdexcept>
 #ifdef SEASTAR_DEADLOCK_DETECTION
 #include <map>
 #include <optional>
@@ -208,11 +211,12 @@ private:
             _write_buffer._length = length;
             return file.dma_write(_file_size, _write_buffer.start_ptr(), length).then([this](size_t written) {
                 if (written != _write_buffer.size()) {
-                    throw std::exception();
+                    auto err = std::runtime_error("deadlock detection: loop: short write");
+                    return seastar::make_exception_future<seastar::stop_iteration>(err);
                 }
                 _write_buffer.reset();
                 _file_size += written;
-                return seastar::stop_iteration::no;
+                return seastar::make_ready_future<seastar::stop_iteration>(seastar::stop_iteration::no);
             });
         }
     }
@@ -230,7 +234,8 @@ private:
         _write_buffer._length = length;
         return file.dma_write(_file_size, _write_buffer.start_ptr(), length).then([this](size_t written) {
             if (written != _write_buffer.size()) {
-                throw std::exception();
+                auto err = std::runtime_error("deadlock detection: flush: short write");
+                return seastar::make_exception_future(err);
             }
             _write_buffer.reset();
             _file_size += written;
